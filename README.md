@@ -1,145 +1,228 @@
-# Clinical NLP Transformers (cnlp_transformers)
-Transformers for Clinical NLP
+# An end-to-end natural language processing system for automatically extracting radiotherapy events from clinical texts
 
-This library was created to add abstractions on top of the Huggingface Transformers library for many clinical NLP research use cases.
-Primary use cases include 
- 1) simplifying multiple tasks related to fine-tuning of transformers for building models for clinical NLP research, and 
- 2) creating inference APIs that will allow downstream researchers easier access to clinical NLP outputs. 
+## License
 
-This library is _not_ intended to serve as a place for clinical NLP applications to live. If you build something cool that uses transformer models that take advantage of our model definitions, the best practice is probably to rely on it as a library rather than treating it as your workspace. This library is also not intended as a deployment-ready tool for _scalable_ clinical NLP. There is a lot of interest in developing methods and tools that are smaller and can process millions of records, and this library can potentially be used for research along those line. But it will probably never be extremely optimized or shrink-wrapped for applications. However, there should be plenty of examples and useful code for people who are interested in that type of deployment.
+This code is released under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
-## Install
+## Paper
 
-**Note: due to some dependency issues, this package does not officially
-support macOS on Apple Silicon. If you want to install it on Apple Silicon,
-you are on your own; we unofficially recommend trying it with Python 3.10.**
+The paper for which this code was written is [here](https://www.w3.org/Provider/Style/dummy.html).
+This README does *not* include information on the schema or guidelines used in annotating the data,
+or more than basic information about the source of the data.
+For technical questions not pertaining to this code, please see the paper.
 
-When installing the library's dependencies, `pip` will probably install 
-PyTorch with CUDA 10.2 support by default. If you would like to run the 
-library in CPU-only mode or with a newer version of CUDA, [install PyTorch 
-to your desired specifications](https://pytorch.org/get-started/locally/) 
-in your virtual environment first before installing `cnlp-transformers`.
+## Description
 
-If you are installing just to run the REST APIs, you can just install without cloning with:
-```pip install cnlp_transformers```
+The provided code and data comprises a system for extracting radiotherapy treatment events from clinical text,
+using paragraph parsing from [cTAKES](https://ctakes.apache.org),
+followed by event extraction over the paragraphs using
+[transformer](https://huggingface.co/docs/transformers/main/en/index)-based
+named entity recognition (NER) and relation extraction (RE) models, and rule-based post-processing.
 
-If you want to modify code (for fine-tuning), then install locally with:
-1. ```git clone https://github.com/Machine-Learning-for-Medical-Language/cnlp_transformers.git```
-2. ```cd cnlp_transformers```
-3. ```pip install -e .```
+Please note that the system uses individual NER models for each entity, and a single multi-class RE model for all relations.
 
-## Fine-tuning
-The main entry point for fine-tuning is the ```train_system.py``` script. Run with no arguments to show an extensive list of options that are allowed, inheriting from and extending the Huggingface training options.
+## User Community
 
-### Workflow
-To use the library for fine-tuning, you'll need to take the following steps:
-1. Write your dataset to a convenient format in a folder with train, dev, and test files.
-2. Create a new entry for your dataset in ```src/cnlpt/cnlp_processors.py``` in the following places:
-    1. Create a unique ```task_name``` for your task.
-    2. ```cnlp_output_modes``` -- Add a mapping from a task name to a task type. Currently supported task types are sentence classification, tagging, relation extraction, and multi-task sentence classification.
-    3. Processor class -- Create a subclass of DataProcessor for your data source. There are multiple examples to base off of, including intermediate abstractions like LabeledSentenceProcessor, RelationProcessor, SequenceProcessor, that simplify the implementation.
-    4. ```cnlp_processors``` -- Add a mapping from your task name to the "processor" class you created in the last step.
-    5. (Optional) -- Modify cnlp_processors.cnlp_compute_metrics() to add you task. If your task is classification a reasonable default will be used so this step would be optional.
-3. Run train_system.py with the ```--task_name``` argument from Step 2.1 and the ```--data-dir``` argument from Step 1.
+Physicians, cancer registries, or individual developers,
+interested in extracting radiotherapy treatment events from free form clinical text.
 
-### End-to-end example
-1. Download data from [Drug Review Dataset (Drugs.com) Data Set](https://archive.ics.uci.edu/ml/datasets/Drug+Review+Dataset+%28Drugs.com%29) and extract. Pay attention to their terms:
-   1. only use the data for research purposes
-   2. don't use the data for any commerical purposes
-   3. don't distribute the data to anyone else
-   4. cite us
-2. Run ```python -m cnlpt.data.transform_uci_drug <input dir> <output dir>``` to preprocess the data from the extract directory into a new directory. This will create {train,dev,test}.tsv in the output directory specified, where the sentiment labels have been collapsed into 3 categories.
-3. Fine-tune with something like: 
-```python -m cnlpt.train_system --task_name ucidrug --data_dir ~/mnt/r/DeepLearning/mmtl/drug-sentiment/ --encoder_name roberta-base --do_train --cache cache/ --output_dir temp/ --overwrite_output_dir --evals_per_epoch 5 --do_eval --num_train_epochs 1 --learning_rate 1e-5```
+## Usability
 
-On our hardware, that command results in the following eval performance:
-```ucidrug = {'acc': 0.8127712337259765, 'f1': [0.8030439829743325, 0.49202644885258656, 0.9018332042344437], 'acc_and_f1': [0.8079076083501545, 0.6523988412892815, 0.8573022189802101], 'recall': [0.788500506585613, 0.524896265560166, 0.8935734752353663], 'precision': [0.8181340341655716, 0.4630307467057101, 0.9102470551443761]}```
+The provided code can be used to train a model and classify it on the provided data in the `HemOnc_RT_Data` folder
+(or other data the developer has access to).
+The provided code uses data from [HemOnc.org](HemOnc.org), the Kentucky Cancer Registry, and the Mayo Clinic,
+that has been downloaded, annotated, paragraph parsed, and converted to `tsv`.
 
-For a demo of how to run the system in colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1IVT53DBwFxLKftpIn5iKtF0g4xb9yuxm?usp=sharing)
+There are three types of `tsv` data formatting used in this code, one for training named entity recognition NERmodels,
+one for training the RE model,
+and one for evaluating the full end to end pipeline system.
+For further explanation see the [data format section](#input-format).   
 
-### Fine-tuning options
-Run ```python -m cnlpt.train_system -h``` to see all the available options. In addition to inherited Huggingface Transformers options, there are options to do the following:
-* Run simple baselines (use ``--model cnn --tokenizer_name roberta-base`` -- since there is no HF model then you must specify the tokenizer explicitly)
-* Use a different layer's CLS token for the classification (e.g., ```--layer 10```)
-* Only update the weights of the classifier head and leave the encoder weights alone (```--freeze```)
-* Classify based on a token embedding instead of the CLS embedding (```--token``` -- requires the input to have xml-style tags (<e>, </e>) around the tokens of interest)
-* Use class-weighted loss function (```--class_weights```)
+We include the formatted training and evaluation data from HemOnc.org,
+and not from the other two sources, due to data use agreements and to protect patient privacy.
+For this reason we do not include our models used in the paper,
+however we include results from models trained on the included data for reproducibility.  
 
-## Running REST APIs
-There are existing REST APIs in the ```src/cnlpt/api``` folder for a few important clinical NLP tasks: 
-1. Negation detection
-2. Time expression tagging (spans + time classes)
-3. Event detection (spans + document creation time relation)
-4. End-to-end temporal relation extraction (event spans+DTR+timex spans+time classes+narrative container [CONTAINS] relation extraction)
+## Uniqueness
 
-### Negation API
-To demo the negation API:
-1. Install the `cnlp-transformers` package.
-2. Run `cnlpt_negation_rest [-p PORT]`.
-3. Open a python console and run the following commands:
+Radiotherapy treatment is often only described in clinical documents, but end-to-end extraction of these treatments from text is an as yet
+unaddressed problem in clinical natural language processing.
+The authors hope this work will contribute to cancer surveillance and outcomes research in general by facilitating real-world evidence generation. Future goals including using these methods to help construct comprehensive cancer treatment timelines.
 
-#### Setup variables
+## Point of Contact
+
+If you have trouble running this software or find any issues, please contact [Eli Goldner](mailto:eli.goldner@childrens.harvard.edu?subject=[GitHub]%20RT%20System%20Code). 
+
+## Process Overview
+
+To reproduce our steps:
+- [Install this code](#installation)
+- [Train models for each RT task](#training-models)
+- [Run the models in pipeline mode on the data](#pipeline-evaluation)
+
+
+The pipeline evaluation provides both instance averaged and document averaged results.
+The models will provide instance averaged results on a validation set
+(just rename the test split or any other file to `dev.tsv` to have the model evaluate on that).
+If however you have data organized by document and want to obtain document averaged results for an
+individual model, see [this section](#individual-model-document-level-evaluation).
+
+
+## Installation
+
 ```
->>> import requests
->>> process_url = 'http://hostname:8000/negation/process'  ## Replace hostname with your host name
+conda create -n cnlp python=3.8
 ```
 
-#### Prepare the document
+Follow the instructions for installing PyTorch for CUDA [here](https://pytorch.org/get-started/locally/).
+If you do not have GPU access, this code can *in theory* train models and load them for inference on CPU with significant RAM,
+however we do not recommend this nor do we support it at this time.
+If this is your use case or you require other optimizations
+see the [Huggingface pipeline documentation](https://huggingface.co/docs/transformers/main_classes/pipelines)
+for possible strategies for inference, for training optimizations see [Huggingface's suggestions](https://huggingface.co/docs/transformers/perf_train_cpu).   
+
+
+Download the repository via either:
+- HTTPS
 ```
->>> sent = 'The patient has a sore knee and headache but denies nausea and has no anosmia.'
->>> ents = [[18, 27], [32, 40], [52, 58], [70, 77]]
->>> doc = {'doc_text':sent, 'entities':ents}
+git clone https://github.com/Eli-Goldner/personal_cnlpt.git
+```
+- SSH
+```
+git clone git@github.com:Eli-Goldner/personal_cnlpt.git
+```
+Then `cd personal_cnlpt && pip install -e .` will install the package along with all the non-PyTorch dependencies. 
+
+```
+pip install -e .
 ```
 
-#### Process the document
-```
->>> r = requests.post(process_url, json=doc)
->>> r.json()
-```
-Output: {'statuses': [-1, -1, 1, 1]}
+## Input format
 
-The model correctly classifies both nausea and anosmia as negated.
+### Named Entity Recognition
 
-### Temporal API (End-to-end temporal information extraction)
-To demo the temporal API:
-1. Install the `cnlp-transformers` package.
-2. Run `cnlpt_temporal_rest [-p PORT]`
-3. Open a python console and run the following commands to test:
-#### Setup variables
+(Examples from [HemOnc.org](https://hemonc.org/wiki/Main_Page))
+
+Newline separated tab delimited (`tsv`) files.
+
+Tags are one of `O`, `B-<mention type>`, `I-<mention type>`, respectively, token is outside a mention, token is the beginning of a mention, token is inside of a mention
+
+label:
+>`O O O B-Anatomical_site O B-Anatomical_site I-Anatomical_site I-Anatomical_site O B-Anatomical_site I-Anatomical_site I-Anatomical_site I-Anatomical_site I-Anatomical_site O O O O O O B-Anatomical_site I-Anatomical_site O`
+paragraph
+>`Then 5.4 Gy boost to secondary target volume of 1 - to 1.5-cm margin on all sides , including proven nodal involvement .`
+
+in the actual files these are separated by a tab, presentation here is for readability.
+
+### Relation Extraction
+
+Tokens which comprise the anchor dose mention are surrounded by the `<RT_DOSE-START>` and `<RT_DOSE-END>` tags.  Tokens which comprise the attribute mention (one of boost, date, second dose, fraction number, fraction frequency, site) are surrounded by their corresponding tags, e.g. `<BOOST-START>, <BOOST-END>`, `<DATE-START>, <DATE-END>`, etc.   
+
+label:
+>`DOSE-DOSE`
+paragraph:
+>`of 30 Gy to point A given in 5 fractions , starting week 4 of XRT <RT_DOSE-START> 1.8 Gy <RT_DOSE-END> fractions x 28 fractions , for a total dose of <DOSE-START> 50.4 Gy <DOSE-END> . The last 5.4 Gy of the 50.4 Gy is limited to the tumor bed . 1.8 Gy fractions x 25 fractions , then a 5.4 Gy final boost , for a total dose of 50.4 Gy , starting within 24 hours of start of chemotherapy 180 cGy x 22 with 3 cm margin to GTV then 180 cGy x 6 with 2 cm margin to GTV , total 50.4 Gy over 6`
+
+## Training Models
+
+Defining tasks is accomplished in `src/cnlpt/cnlp_processors.py`.
+NER tasks are cases of `tagging` tasks in the framework,
+relation extraction with provided entities are `classification` tasks.
+
+`boost_train.sh` =
+
 ```
->>> import requests
->>> from pprint import pprint
->>> process_url = 'http://hostname:8000/temporal/process_sentence'  ## Replace hostname with your host name
+task=rt_boost
+dir="/home/$USER/RT_cnlpt_data/NER/boost/"
+
+epochs=10
+#actual_epochs=1.497041420118343
+lr=2e-5
+ev_per_ep=0
+stl=0
+seed=42
+gas=4
+lr_type=constant
+encoder="emilyalsentzer/Bio_ClinicalBERT"
+dmy=$(date +'%m_%d_%Y')
+temp="/home/$USER/RT_pipeline_models/$task/"
+cache="/home/$USER/RT_pipeline_models/caches/$task"
+mkdir -p $cache
+mkdir -p $temp
+python -m cnlpt.train_system \
+--task_name $task \
+--data_dir $dir \
+--encoder_name $encoder \
+--do_train \
+--cache $cache \
+--output_dir $temp \
+--overwrite_output_dir \
+--evals_per_epoch $ev_per_ep \
+--do_eval \
+--num_train_epochs $epochs \
+#--actual_epochs $actual_epochs \
+--learning_rate $lr \
+--lr_scheduler_type $lr_type \
+--seed $seed \
+--gradient_accumulation_steps $gas
+
 ```
 
-#### Prepare and process the document
+**NB: `actual_epochs` vs `num_train_epochs`**
+
+The need for these distinct hyperparameters arises from the cases of the cosine or linear learning rate schedulers.
+The frequency of the cosine function, or the decay rate of the linear function, that generates learning rate values is defined in terms of the maximum number of epochs given to the model.
+If you are using some form of early stopping, as we did, then to properly reproduce one's results one needs to stop the model not just at the
+epoch fraction at which it stopped but with the same trajectory of the learning rate scheduler throughout.
+Thus where the `actual_epochs` argument is specified, the model's learning rate scheduler will generate a function with a frequency
+determined by `num_train_epochs` (the projected number of epochs used in training) but the stopping point will be determined by `actual_epochs`.
+
+## Individual Model Document Level Evaluation
+
+To obtain document averaged scores for a model over a director of `tsv` files:
+
+>```python -m cnlpt.rt_model_eval --model_dir test_pipeline_models/rt_site/ --task_name rt_site --in_dir DocNERcnlpt/site/HemOnc/```
+
+## Pipeline Evaluation
+
+>```python -m cnlpt.cnlp_pipeline --models_dir test_pipeline_models/ --axis_task rt_dose --in_dir kcr-naacr/ --mode eval```
+Assumes `models_dir` is of the form:
 ```
->>> sent = 'The patient was diagnosed with adenocarcinoma March 3, 2010 and will be returning for chemotherapy next week.'
->>> r = requests.post(process_url, json={'sentence':sent})
->>> pprint(r.json())
+/test_pipeline_models/
+├── rt_boost
+├── rt_date
+├── rt_dose
+├── rt_fxfreq
+├── rt_fxno
+├── rt_rel
+└── rt_site
+
 ```
-should return:
+And that each task-named subdir is of the form:
 ```
-{'events': [[{'begin': 3, 'dtr': 'BEFORE', 'end': 3},
-             {'begin': 5, 'dtr': 'BEFORE', 'end': 5},
-             {'begin': 13, 'dtr': 'AFTER', 'end': 13},
-             {'begin': 15, 'dtr': 'AFTER', 'end': 15}]],
- 'relations': [[{'arg1': 'TIMEX-0', 'arg2': 'EVENT-0', 'category': 'CONTAINS'},
-                {'arg1': 'EVENT-2', 'arg2': 'EVENT-3', 'category': 'CONTAINS'},
-                {'arg1': 'TIMEX-1', 'arg2': 'EVENT-2', 'category': 'CONTAINS'},
-                {'arg1': 'TIMEX-1',
-                 'arg2': 'EVENT-3',
-                 'category': 'CONTAINS'}]],
- 'timexes': [[{'begin': 6, 'end': 9, 'timeClass': 'DATE'},
-              {'begin': 16, 'end': 17, 'timeClass': 'DATE'}]]}
+/rt_boost/
+├── added_tokens.json
+├── config.json
+├── eval_predictions.txt
+├── eval_results.txt
+├── pytorch_model.bin
+├── special_tokens_map.json
+├── tokenizer_config.json
+├── tokenizer.json
+├── training_args.bin
+└── vocab.txt
 ```
-This output indicates the token spans of events and timexes, and relations between events and timexes, where the suffixes are indices into the respective arrays (e.g., TIMEX-0 in a relation refers to the 0th time expression found, which begins at token 6 and ends at token 9 -- ["March 3, 2010"])
+i.e. contains the actual trained model binary (`pytorch_model.bin`) along with the other files related to the model's configuration.
 
-To run only the time expression or event taggers, change the run command to:
+## Reproducing Results
 
-```uvicorn api.timex_rest:app --host 0.0.0.0``` or
+As explained [earlier](#usability), we cannot provide our trained models or full training data.
+However we have provided data from [HemOnc.org](HemOnc.org) for training NER and RE models,
+instructions for training models and obtaining end-to-end results with trained models,
+and own results from this process using the provided HemOnc.org data.
 
-```uvicorn api.event_rest:app --host 0.0.0.0```
+For the instructions and our results obtained from the same process, please see the file `hemonc-results.md` at the top level of this directory.
 
-then run the same init and process commands as above. You will get similar json output, but only one of the dictionary elements (timexes or events) will be populated.
+## Acknowledgements
 
+The work was supported by the US National Institutes of Health (grants UH3CA243120, U24CA248010, R01LM010090, R01LM013486, 5R01GM11435).
