@@ -1,0 +1,131 @@
+Training parameters:
+
+Training set size 1878
+Batch size 8
+Batches per epoch: 235
+
+Total steps: 1762
+------------------------------Projected training epochs: 30.0
+actual_steps: -1Eval arguments:
+
+Steps per epoch: 58
+Evals per epoch: 2
+Eval steps: 29
+
+
+
+***** Eval results for task rt_site *****
+
+acc = 0.938573883161512
+token_f1 = [0.968313760248172, 0.0, 0.0]
+f1 = 0.0
+precision = 0.0
+recall = 0.0
+report = 
+                 precision    recall  f1-score   support
+
+Anatomical_site       0.00      0.00      0.00       298
+
+      micro avg       0.00      0.00      0.00       298
+      macro avg       0.00      0.00      0.00       298
+   weighted avg       0.00      0.00      0.00       298
+
+
+
+***** Eval results for task rt_site *****
+
+acc = 0.9627362542955327
+token_f1 = [0.984976844007681, 0.6275862068965518, 0.37278106508875736]
+f1 = 0.41264559068219636
+precision = 0.40924092409240925
+recall = 0.4161073825503356
+report = 
+                 precision    recall  f1-score   support
+
+Anatomical_site       0.41      0.42      0.41       298
+
+      micro avg       0.41      0.42      0.41       298
+      macro avg       0.41      0.42      0.41       298
+   weighted avg       0.41      0.42      0.41       298
+
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.0 
+curr_epoch : 0.49361702127659574 
+max_epochs : 30 
+curr_step : 29 
+max_steps : 1740 
+best_step : 29 
+best_epoch : 0.49361702127659574 
+
+
+***** Eval results for task rt_site *****
+
+acc = 0.9721864261168385
+token_f1 = [0.9870056176587413, 0.696113074204947, 0.7310344827586207]
+f1 = 0.6037099494097807
+precision = 0.6067796610169491
+recall = 0.6006711409395973
+report = 
+                 precision    recall  f1-score   support
+
+Anatomical_site       0.61      0.60      0.60       298
+
+      micro avg       0.61      0.60      0.60       298
+      macro avg       0.61      0.60      0.60       298
+   weighted avg       0.61      0.60      0.60       298
+
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.41264559068219636 
+curr_epoch : 0.9872340425531915 
+max_epochs : 30 
+curr_step : 58 
+max_steps : 1740 
+best_step : 58 
+best_epoch : 0.9872340425531915 
+
+
+***** Eval results for task rt_site *****
+
+acc = 0.9730455326460481
+token_f1 = [0.9872857305028947, 0.6876155268022182, 0.7655913978494623]
+f1 = 0.6467486818980668
+precision = 0.6789667896678967
+recall = 0.6174496644295302
+report = 
+                 precision    recall  f1-score   support
+
+Anatomical_site       0.68      0.62      0.65       298
+
+      micro avg       0.68      0.62      0.65       298
+      macro avg       0.68      0.62      0.65       298
+   weighted avg       0.68      0.62      0.65       298
+
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.6037099494097807 
+curr_epoch : 1.9872340425531916 
+max_epochs : 30 
+curr_step : 116 
+max_steps : 1740 
+best_step : 87 
+best_epoch : 1.4936170212765958 
+rt_site = {'acc': 0.9730455326460481, 'token_f1': [0.9872857305028947, 0.6876155268022182, 0.7655913978494623], 'f1': 0.6467486818980668, 'precision': 0.6789667896678967, 'recall': 0.6174496644295302, 'report': '\n                 precision    recall  f1-score   support\n\nAnatomical_site       0.68      0.62      0.65       298\n\n      micro avg       0.68      0.62      0.65       298\n      macro avg       0.68      0.62      0.65       298\n   weighted avg       0.68      0.62      0.65       298\n'}
+
+
+ Current state (In do_eval (End?)) 
+
+best_score : 0.6467486818980668 
+curr_epoch : 29.98723404255319 
+max_epochs : 30 
+curr_step : 1740 
+max_steps : 1740 
+best_step : 145 
+best_epoch : 2.4936170212765956 

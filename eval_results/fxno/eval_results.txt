@@ -1,0 +1,102 @@
+Training parameters:
+
+Training set size 1878
+Batch size 8
+Batches per epoch: 235
+
+Total steps: 881
+------------------------------Projected training epochs: 15.0
+actual_steps: -1Eval arguments:
+
+Steps per epoch: 58
+Evals per epoch: 2
+Eval steps: 29
+
+
+
+***** Eval results for task rt_fxno *****
+
+acc = 0.9807941303409581
+token_f1 = [0.9901111111111112, 0.667910447761194]
+f1 = 0.667910447761194
+precision = 1.0
+recall = 0.5014005602240896
+report = 
+                    precision    recall  f1-score   support
+
+RT_Fraction_Number       1.00      0.50      0.67       357
+
+         micro avg       1.00      0.50      0.67       357
+         macro avg       1.00      0.50      0.67       357
+      weighted avg       1.00      0.50      0.67       357
+
+
+
+***** Eval results for task rt_fxno *****
+
+acc = 0.9967630556754424
+token_f1 = [0.9983155530600787, 0.9586776859504134]
+f1 = 0.9586776859504134
+precision = 0.943089430894309
+recall = 0.9747899159663865
+report = 
+                    precision    recall  f1-score   support
+
+RT_Fraction_Number       0.94      0.97      0.96       357
+
+         micro avg       0.94      0.97      0.96       357
+         macro avg       0.94      0.97      0.96       357
+      weighted avg       0.94      0.97      0.96       357
+
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.667910447761194 
+curr_epoch : 0.49361702127659574 
+max_epochs : 15 
+curr_step : 29 
+max_steps : 870 
+best_step : 29 
+best_epoch : 0.49361702127659574 
+
+
+***** Eval results for task rt_fxno *****
+
+acc = 0.9971946482520501
+token_f1 = [0.9985421105753056, 0.9629629629629629]
+f1 = 0.9629629629629629
+precision = 0.9797101449275363
+recall = 0.9467787114845938
+report = 
+                    precision    recall  f1-score   support
+
+RT_Fraction_Number       0.98      0.95      0.96       357
+
+         micro avg       0.98      0.95      0.96       357
+         macro avg       0.98      0.95      0.96       357
+      weighted avg       0.98      0.95      0.96       357
+
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.9586776859504134 
+curr_epoch : 11.987234042553192 
+max_epochs : 15 
+curr_step : 696 
+max_steps : 870 
+best_step : 58 
+best_epoch : 0.9872340425531915 
+rt_fxno = {'acc': 0.9971946482520501, 'token_f1': [0.9985421105753056, 0.9629629629629629], 'f1': 0.9629629629629629, 'precision': 0.9797101449275363, 'recall': 0.9467787114845938, 'report': '\n                    precision    recall  f1-score   support\n\nRT_Fraction_Number       0.98      0.95      0.96       357\n\n         micro avg       0.98      0.95      0.96       357\n         macro avg       0.98      0.95      0.96       357\n      weighted avg       0.98      0.95      0.96       357\n'}
+
+
+ Current state (In do_eval (End?)) 
+
+best_score : 0.9629629629629629 
+curr_epoch : 14.987234042553192 
+max_epochs : 15 
+curr_step : 870 
+max_steps : 870 
+best_step : 725 
+best_epoch : 12.493617021276595 

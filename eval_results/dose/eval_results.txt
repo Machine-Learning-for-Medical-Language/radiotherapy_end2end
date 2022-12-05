@@ -1,0 +1,276 @@
+Training parameters:
+
+Training set size 173
+Batch size 8
+Batches per epoch: 22
+
+Total steps: 55
+------------------------------Projected training epochs: 10.0
+actual_steps: -1Eval arguments:
+
+Steps per epoch: 5
+Evals per epoch: 2
+Eval steps: 2
+
+
+
+***** Eval results for task rt_dose *****
+
+acc = 0.7515078407720145
+token_f1 = [0.8439773645917542, 0.30158730158730157, 0.5559322033898306]
+f1 = 0.18106995884773663
+precision = 0.1476510067114094
+recall = 0.23404255319148937
+report = 
+              precision    recall  f1-score   support
+
+   RT_Dosage       0.15      0.23      0.18        94
+
+   micro avg       0.15      0.23      0.18        94
+   macro avg       0.15      0.23      0.18        94
+weighted avg       0.15      0.23      0.18        94
+
+
+
+***** Eval results for task rt_dose *****
+
+acc = 0.9119420989143546
+token_f1 = [0.9458646616541353, 0.6029411764705882, 0.8958333333333333]
+f1 = 0.42391304347826086
+precision = 0.43333333333333335
+recall = 0.4148936170212766
+report = 
+              precision    recall  f1-score   support
+
+   RT_Dosage       0.43      0.41      0.42        94
+
+   micro avg       0.43      0.41      0.42        94
+   macro avg       0.43      0.41      0.42        94
+weighted avg       0.43      0.41      0.42        94
+
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.18106995884773663 
+curr_epoch : 1.9090909090909092 
+max_epochs : 10 
+curr_step : 10 
+max_steps : 50 
+best_step : 2 
+best_epoch : 0.36363636363636365 
+
+
+***** Eval results for task rt_dose *****
+
+acc = 0.9601930036188179
+token_f1 = [0.9767080745341615, 0.9101123595505619, 0.8958333333333333]
+f1 = 0.8387096774193549
+precision = 0.8478260869565217
+recall = 0.8297872340425532
+report = 
+              precision    recall  f1-score   support
+
+   RT_Dosage       0.85      0.83      0.84        94
+
+   micro avg       0.85      0.83      0.84        94
+   macro avg       0.85      0.83      0.84        94
+weighted avg       0.85      0.83      0.84        94
+
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.42391304347826086 
+curr_epoch : 2.3636363636363638 
+max_epochs : 10 
+curr_step : 12 
+max_steps : 50 
+best_step : 12 
+best_epoch : 2.3636363636363638 
+
+
+***** Eval results for task rt_dose *****
+
+acc = 0.9698431845597105
+token_f1 = [0.9858044164037855, 0.9285714285714286, 0.9072164948453609]
+f1 = 0.8571428571428571
+precision = 0.8235294117647058
+recall = 0.8936170212765957
+report = 
+              precision    recall  f1-score   support
+
+   RT_Dosage       0.82      0.89      0.86        94
+
+   micro avg       0.82      0.89      0.86        94
+   macro avg       0.82      0.89      0.86        94
+weighted avg       0.82      0.89      0.86        94
+
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.8387096774193549 
+curr_epoch : 2.7272727272727275 
+max_epochs : 10 
+curr_step : 14 
+max_steps : 50 
+best_step : 14 
+best_epoch : 2.7272727272727275 
+
+
+***** Eval results for task rt_dose *****
+
+acc = 0.9746682750301568
+token_f1 = [0.988906497622821, 0.9400000000000001, 0.9183673469387754]
+f1 = 0.8600000000000001
+precision = 0.8113207547169812
+recall = 0.9148936170212766
+report = 
+              precision    recall  f1-score   support
+
+   RT_Dosage       0.81      0.91      0.86        94
+
+   micro avg       0.81      0.91      0.86        94
+   macro avg       0.81      0.91      0.86        94
+weighted avg       0.81      0.91      0.86        94
+
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.8571428571428571 
+curr_epoch : 3.1818181818181817 
+max_epochs : 10 
+curr_step : 16 
+max_steps : 50 
+best_step : 16 
+best_epoch : 3.1818181818181817 
+
+
+***** Eval results for task rt_dose *****
+
+acc = 0.9819059107358263
+token_f1 = [0.9936305732484076, 0.9400000000000001, 0.9504950495049506]
+f1 = 0.8700000000000001
+precision = 0.8207547169811321
+recall = 0.925531914893617
+report = 
+              precision    recall  f1-score   support
+
+   RT_Dosage       0.82      0.93      0.87        94
+
+   micro avg       0.82      0.93      0.87        94
+   macro avg       0.82      0.93      0.87        94
+weighted avg       0.82      0.93      0.87        94
+
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.8600000000000001 
+curr_epoch : 3.5454545454545454 
+max_epochs : 10 
+curr_step : 18 
+max_steps : 50 
+best_step : 18 
+best_epoch : 3.5454545454545454 
+
+
+***** Eval results for task rt_dose *****
+
+acc = 0.9843184559710495
+token_f1 = [0.9952153110047847, 0.9447236180904524, 0.9560975609756097]
+f1 = 0.8743718592964825
+precision = 0.8285714285714286
+recall = 0.925531914893617
+report = 
+              precision    recall  f1-score   support
+
+   RT_Dosage       0.83      0.93      0.87        94
+
+   micro avg       0.83      0.93      0.87        94
+   macro avg       0.83      0.93      0.87        94
+weighted avg       0.83      0.93      0.87        94
+
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.8700000000000001 
+curr_epoch : 5.181818181818182 
+max_epochs : 10 
+curr_step : 26 
+max_steps : 50 
+best_step : 20 
+best_epoch : 3.909090909090909 
+
+
+***** Eval results for task rt_dose *****
+
+acc = 0.9939686369119421
+token_f1 = [0.9960159362549801, 0.9842931937172774, 0.9905660377358491]
+f1 = 0.9842931937172774
+precision = 0.9690721649484536
+recall = 1.0
+report = 
+              precision    recall  f1-score   support
+
+   RT_Dosage       0.97      1.00      0.98        94
+
+   micro avg       0.97      1.00      0.98        94
+   macro avg       0.97      1.00      0.98        94
+weighted avg       0.97      1.00      0.98        94
+
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.8743718592964825 
+curr_epoch : 5.545454545454545 
+max_epochs : 10 
+curr_step : 28 
+max_steps : 50 
+best_step : 28 
+best_epoch : 5.545454545454545 
+
+
+***** Eval results for task rt_dose *****
+
+acc = 0.9951749095295537
+token_f1 = [0.9968152866242038, 1.0, 0.9813084112149533]
+f1 = 0.9894736842105264
+precision = 0.9791666666666666
+recall = 1.0
+report = 
+              precision    recall  f1-score   support
+
+   RT_Dosage       0.98      1.00      0.99        94
+
+   micro avg       0.98      1.00      0.99        94
+   macro avg       0.98      1.00      0.99        94
+weighted avg       0.98      1.00      0.99        94
+
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.9842931937172774 
+curr_epoch : 6.7272727272727275 
+max_epochs : 10 
+curr_step : 34 
+max_steps : 50 
+best_step : 30 
+best_epoch : 5.909090909090909 
+rt_dose = {'acc': 0.9951749095295537, 'token_f1': [0.9968152866242038, 1.0, 0.9813084112149533], 'f1': 0.9894736842105264, 'precision': 0.9791666666666666, 'recall': 1.0, 'report': '\n              precision    recall  f1-score   support\n\n   RT_Dosage       0.98      1.00      0.99        94\n\n   micro avg       0.98      1.00      0.99        94\n   macro avg       0.98      1.00      0.99        94\nweighted avg       0.98      1.00      0.99        94\n'}
+
+
+ Current state (In do_eval (End?)) 
+
+best_score : 0.9894736842105264 
+curr_epoch : 9.909090909090908 
+max_epochs : 10 
+curr_step : 50 
+max_steps : 50 
+best_step : 36 
+best_epoch : 7.181818181818182 

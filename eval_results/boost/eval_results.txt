@@ -1,0 +1,130 @@
+Training parameters:
+
+Training set size 1878
+Batch size 8
+Batches per epoch: 235
+
+Total steps: 587
+------------------------------Projected training epochs: 10.0
+actual_steps: -1Eval arguments:
+
+Steps per epoch: 58
+Evals per epoch: 2
+Eval steps: 29
+
+Training parameters:
+
+Training set size 1878
+Batch size 8
+Batches per epoch: 235
+
+Total steps: 587
+------------------------------Projected training epochs: 10.0
+actual_steps: -1Eval arguments:
+
+Steps per epoch: 58
+Evals per epoch: 2
+Eval steps: 29
+
+Training parameters:
+
+Training set size 1878
+Batch size 8
+Batches per epoch: 235
+
+Total steps: 587
+------------------------------Projected training epochs: 10.0
+actual_steps: -1Eval arguments:
+
+Steps per epoch: 58
+Evals per epoch: 2
+Eval steps: 29
+
+
+
+***** Eval results for task rt_boost *****
+
+acc = 0.9925550280535175
+token_f1 = [0.9962636053500838, 0.0]
+f1 = 0.0
+precision = 0.0
+recall = 0.0
+report = 
+              precision    recall  f1-score   support
+
+       Boost       0.00      0.00      0.00        69
+
+   micro avg       0.00      0.00      0.00        69
+   macro avg       0.00      0.00      0.00        69
+weighted avg       0.00      0.00      0.00        69
+
+
+
+***** Eval results for task rt_boost *****
+
+acc = 0.9982736296935693
+token_f1 = [0.99913015113624, 0.8873239436619719]
+f1 = 0.8873239436619719
+precision = 0.863013698630137
+recall = 0.9130434782608695
+report = 
+              precision    recall  f1-score   support
+
+       Boost       0.86      0.91      0.89        69
+
+   micro avg       0.86      0.91      0.89        69
+   macro avg       0.86      0.91      0.89        69
+weighted avg       0.86      0.91      0.89        69
+
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.0 
+curr_epoch : 0.9872340425531915 
+max_epochs : 10 
+curr_step : 58 
+max_steps : 580 
+best_step : 29 
+best_epoch : 0.49361702127659574 
+
+
+***** Eval results for task rt_boost *****
+
+acc = 0.9992447129909365
+token_f1 = [0.99961962723469, 0.9473684210526315]
+f1 = 0.9473684210526315
+precision = 0.984375
+recall = 0.9130434782608695
+report = 
+              precision    recall  f1-score   support
+
+       Boost       0.98      0.91      0.95        69
+
+   micro avg       0.98      0.91      0.95        69
+   macro avg       0.98      0.91      0.95        69
+weighted avg       0.98      0.91      0.95        69
+
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.8873239436619719 
+curr_epoch : 1.4936170212765958 
+max_epochs : 10 
+curr_step : 87 
+max_steps : 580 
+best_step : 87 
+best_epoch : 1.4936170212765958 
+rt_boost = {'acc': 0.9992447129909365, 'token_f1': [0.99961962723469, 0.9473684210526315], 'f1': 0.9473684210526315, 'precision': 0.984375, 'recall': 0.9130434782608695, 'report': '\n              precision    recall  f1-score   support\n\n       Boost       0.98      0.91      0.95        69\n\n   micro avg       0.98      0.91      0.95        69\n   macro avg       0.98      0.91      0.95        69\nweighted avg       0.98      0.91      0.95        69\n'}
+
+
+ Current state (In do_eval (End?)) 
+
+best_score : 0.9473684210526315 
+curr_epoch : 9.987234042553192 
+max_epochs : 10 
+curr_step : 580 
+max_steps : 580 
+best_step : 116 
+best_epoch : 1.9872340425531916 

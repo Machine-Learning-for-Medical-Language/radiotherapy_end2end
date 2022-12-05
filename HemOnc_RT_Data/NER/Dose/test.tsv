@@ -1,0 +1,63 @@
+O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O	of 30 Gy to point A given in 5 fractions , starting week 4 of XRT
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O B-RT_Dosage I-RT_Dosage O	1.8 Gy fractions x 28 fractions , for a total dose of 50.4 Gy .
+O O B-RT_Dosage I-RT_Dosage O O B-RT_Dosage I-RT_Dosage O O O O O O O	The last 5.4 Gy of the 50.4 Gy is limited to the tumor bed .
+B-RT_Dosage I-RT_Dosage O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O	1.8 Gy fractions x 25 fractions , then a 5.4 Gy final boost , for a total dose of 50.4 Gy , starting within 24 hours of start of chemotherapy
+B-RT_Dosage I-RT_Dosage O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O	180 cGy x 22 with 3 cm margin to GTV then 180 cGy x 6 with 2 cm margin to GTV , total 50.4 Gy over 6 weeks
+O B-RT_Dosage O O O O O O O O O O O O O O O B-RT_Dosage I-RT_Dosage O	in 1.5-Gy fractions twice per day on days - 8 through - 5 ( total dose : 12 Gy )
+B-RT_Dosage I-RT_Dosage O O O O O O B-RT_Dosage I-RT_Dosage O	2 Gy x 25 fractions ( total of 50 Gy )
+B-RT_Dosage I-RT_Dosage O O O O O O O O B-RT_Dosage I-RT_Dosage O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O O O O O O B-RT_Dosage I-RT_Dosage	2.0 Gy x 25 fractions , for a dose of 50 Gy with 150 cGy fractions given twice per day ( fractions are at least 5 hours apart ) x 8 fractions ( total dose : 1200 cGy ) over 4 days on days - 8 to - 5 , with lung shielding for the final 600 Gy
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O	1.5 Gy fractions x 16 fractions , given twice per day x 8 days .
+O O O O O B-RT_Dosage I-RT_Dosage O	Total dose during consolidation is 24 Gy .
+O O O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O B-RT_Dosage I-RT_Dosage O O O O B-RT_Dosage I-RT_Dosage O	Total dose after induction therapy and consolidation therapy : pelvis : 44.8 Gy ; whole bladder : 52.3 Gy ; bladder tumor volume 64.3 Gy .
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O	172 cGy ( rads ) fractions x 35 fractions , given over 7 weeks for a total dose of 6020 cGy ( 6020 rads /~ 1700 rets )
+B-RT_Dosage I-RT_Dosage O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O O O O O O O O O O	2 Gy fractions x 35 fractions ( total dose : 70 Gy ) , given 5 times per week on weeks 1 , 3 , 5 , 7 , 9 , 11 , 13
+B-RT_Dosage O B-RT_Dosage I-RT_Dosage O O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O O	1.8 or 2.25 Gy fractions x 20 or 25 fractions ( total dose : 45 Gy ) , given over 4 to 5 weeks ; see Northover et al .
+O O O O O O O O O O	2010 for details , including information about boost radiation therapy
+B-RT_Dosage I-RT_Dosage O O O O O O O O B-RT_Dosage I-RT_Dosage I-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O O O O	2 Gy fractions x 35 fractions ( total dose : 60 to 70 Gy ) , given 5 times per week on weeks 1 to 3 , 7 to 9
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O O B-RT_Dosage I-RT_Dosage O	2 Gy fractions once per day x 15 fractions ( total dose : 30 Gy )
+B-RT_Dosage I-RT_Dosage O O O O O O B-RT_Dosage I-RT_Dosage O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O B-RT_Dosage I-RT_Dosage I-RT_Dosage I-RT_Dosage	1.2 Gy fractions x 60 to 64 fractions 1.8 Gy fractions x 12 fractions 1.8 Gy x 23 to 25 fractions , for an initial dose of 41.4 to 45 Gy
+B-RT_Dosage I-RT_Dosage O O O O O O O O	180 cGy in 25 fractions , started with cycle 2
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O B-RT_Dosage I-RT_Dosage	2 Gy fractions x 25 fractions , for a total dose of 50 Gy
+B-RT_Dosage I-RT_Dosage O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O	1.80 Gy fractions x 25 fractions ( total dose : 45 Gy ) , to start within 24 hours of cycle 1 day 1
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O	200 cGy fractions once per day x 25 fractions ( total dose : 50 Gy ) over 5 weeks , started on cycle 4 day 1 of chemotherapy
+B-RT_Dosage I-RT_Dosage O O O O O O O B-RT_Dosage I-RT_Dosage O	1.8 Gy x 33 fractions ( total dose of 59.4 Gy )
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O B-RT_Dosage I-RT_Dosage O	2 Gy fractions x 10 fractions , for a total dose of 66 Gy ( including the initial 46 Gy )
+B-RT_Dosage I-RT_Dosage O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O	1.8 Gy per day x 28 fractions ( total dose : 50.4 Gy ) , given over 5.5 weeks ; see paper for details
+B-RT_Dosage I-RT_Dosage O O O O O O O O B-RT_Dosage I-RT_Dosage O	1.80 Gy fractions x 28 fractions ( total dose : 50.4 Gy )
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O B-RT_Dosage I-RT_Dosage I-RT_Dosage I-RT_Dosage	2 Gy fractions x 30 to 33 fractions , for a total dose of 60 to 66 Gy
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O O O O O O O O O O O O O O O O	1.5 Gy fractions x 16 fractions , given twice per day ( 4 to 6 hour interval between treatments ) on days 1 to 5 , 8 to 10 .
+O O O O O B-RT_Dosage I-RT_Dosage O	Total dose during consolidation is 24 Gy .
+O O O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O B-RT_Dosage I-RT_Dosage O O O O B-RT_Dosage I-RT_Dosage O	Total dose after induction therapy and consolidation therapy : pelvis : 44.8 Gy ; whole bladder : 52.3 Gy ; bladder tumor volume 64.3 Gy .
+B-RT_Dosage I-RT_Dosage O O O O O O O O B-RT_Dosage I-RT_Dosage O	2.5 Gy fractions x 10 fractions ( total dose : 25 Gy )
+O O O O	delivered using IMRT .
+O O O O O O O O O O O O O O O O	Gross tumor volume ( GTV ) was all known disease including imaging proven nodal disease .
+O O O O O O O O O O O O O O O O O O O O O O O O O O O	The primary planning target volume ( PTV1 ) included the GTV with 2 - to 3-cm margins in all directions as well as potential nodal involvement .
+O O O O O O O O O O O O O O O O O O O O O O O O	Secondary planning target volume ( PTV2 ) included the GTV with 1 - to 1.5-cm margins on all sides including proven nodal involvement .
+O O O O O O O O O O O O O O O O O O O O O O O O O O O O O	Tertiary planning treatment volume ( PTV3 ) included the area of the GTV adjacent to the vascular structures specifically the mesenteric and portal vessels with a 0.5-cm margin .
+O O O O O O O B-RT_Dosage I-RT_Dosage O O O O	The prescription dose delivered to PTV3 was 54 Gy in 28 fractions .
+O O O O O O B-RT_Dosage O B-RT_Dosage I-RT_Dosage O O O	Synchronously , PTV1 and PTV2 received 45 and 50.4 Gy , respectively .
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O B-RT_Dosage I-RT_Dosage	4500 cGy is administered to the tumor volume plus a 3 cm margin , followed by 1080 cGy to only the preradiation tumor volume , for a total dose of 5580 cGy
+B-RT_Dosage I-RT_Dosage O O O O B-RT_Dosage I-RT_Dosage O O O O B-RT_Dosage I-RT_Dosage O O O O	36 Gy in 18 fractions of 2.00 Gy per fraction , with 4 Gy boost to involved fields
+B-RT_Dosage I-RT_Dosage I-RT_Dosage I-RT_Dosage O O O O O O	58 to 66 Gy , given 5 times per week
+O B-RT_Dosage I-RT_Dosage O B-RT_Dosage O O O O O O	to 50 Gy in 1.00-Gy fractions , starting on day 90
+O B-RT_Dosage I-RT_Dosage O B-RT_Dosage O	to 23.4 Gy in 1.80-Gy fractions
+B-RT_Dosage I-RT_Dosage O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O O O O O O	45 Gy in 1.8 Gy fractions to the initial tumor volume ; additional treatment up to a total of 55.8 Gy was administered to original bony tumors and the postinduction chemotherapy soft tissue volumes plus a 2 cm margin
+O B-RT_Dosage I-RT_Dosage	to 2400 cGy
+O B-RT_Dosage I-RT_Dosage O O O O	to 2400 cGy , given during consolidation
+O O O B-RT_Dosage I-RT_Dosage	total dose of 50.4 Gy
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O	18 Gy total given in 10 fractions over 12 to 14 days
+B-RT_Dosage I-RT_Dosage O O O O O O O	28 Gy total given ( no details provided )
+B-RT_Dosage I-RT_Dosage	72 Gy
+B-RT_Dosage I-RT_Dosage O O O O O O O O	800 cGy in 4 fractions ( days not specified )
+B-RT_Dosage I-RT_Dosage O O O O O O O O	40.8 Gy ; total induction dose to regional lymph nodes
+O O O O O O O O O B-RT_Dosage I-RT_Dosage I-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O O O O O O O O B-RT_Dosage I-RT_Dosage I-RT_Dosage I-RT_Dosage	given before or after surgery at physician discretion : 1.8 to 2.0 Gy once per day Monday through Friday for a total of 23 to 28 fractions , for a total dose of 46 to 50.4 Gy
+B-RT_Dosage O O O O O O	1.00-Gy fractions , starting on day 90
+O B-RT_Dosage I-RT_Dosage O B-RT_Dosage O O B-RT_Dosage I-RT_Dosage O O O O O	to 30 Gy in 1.8-Gy fractions plus 10 Gy boost to the tumor bed
+B-RT_Dosage I-RT_Dosage O B-RT_Dosage I-RT_Dosage O O O O O O	40 Gy at 1.80 Gy / day to the involved field
+B-RT_Dosage I-RT_Dosage I-RT_Dosage I-RT_Dosage O O O O O	59 to 60 Gy in 30 to 33 fractions
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O B-RT_Dosage I-RT_Dosage	1.5 Gy fractions given twice per day on days 1 to 5 , 8 to 12 , 15 to 19 , with at least 6 hours between fractions , for a total dose of 45 Gy
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O O B-RT_Dosage I-RT_Dosage O	1.2 Gy fractions given twice per day , 5 times per week ( total dose : 75 Gy )
+B-RT_Dosage I-RT_Dosage I-RT_Dosage I-RT_Dosage	40 to 50.4 Gy
+B-RT_Dosage I-RT_Dosage	18 Gy
+B-RT_Dosage I-RT_Dosage	50.4 Gy
+B-RT_Dosage I-RT_Dosage O O O O O O O O B-RT_Dosage I-RT_Dosage O	2.00 Gy fractions x 33 fractions ( total dose : 66 Gy )

@@ -1,0 +1,1782 @@
+1.
+
+Relation type counts:
+( DOSE-SITE , 1 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 5 , 8 , DOSE-SITE) -> ( 80.8 Gy , point A )
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+for a total dose of 80.8 Gy to point A
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 5 , 6 , 80.8 Gy, source : rt_dose )	( 8 , 9 , point A, source : rt_site )
+
+
+
+2.
+
+Relation type counts:
+( DOSE-SITE , 6 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 18 , 39 , DOSE-SITE) -> ( 1.8 to 2 Gy , conedown )
+( 18 , 42 , DOSE-SITE) -> ( 1.8 to 2 Gy , prostate )
+( 18 , 50 , DOSE-SITE) -> ( 1.8 to 2 Gy , 65 to 70 Gy )
+( 34 , 50 , DOSE-SITE) -> ( pelvis , 65 to 70 Gy )
+( 39 , 50 , DOSE-SITE) -> ( conedown , 65 to 70 Gy )
+( 42 , 50 , DOSE-SITE) -> ( prostate , 65 to 70 Gy )
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> is started 2 months after start of androgen deprivation therapy ( ADT ) , 1.8 to 2 Gy per fraction , with an initial 44 to 46 Gy to the pelvis , then an additional conedown to the prostate that resulted in a total dose of 65 to 70 Gy
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 18 , 21 , 1.8 to 2 Gy, source : rt_dose )	( 34 , 34 , pelvis, source : rt_site )
+( 28 , 31 , 44 to 46 Gy, source : rt_dose )	( 39 , 39 , conedown, source : rt_site )
+( 50 , 53 , 65 to 70 Gy, source : rt_dose )	( 42 , 42 , prostate, source : rt_site )
+
+
+
+3.
+
+Relation type counts:
+( DOSE-DOSE , 28 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 39 , 56 , DOSE-DOSE) -> ( boost , 59.4 Gy )
+
+Labels Inferred From Predictions:
+
+( 4 , 8 , DOSE-DOSE) -> ( 1.8 Gy , 25 )
+( 4 , 14 , DOSE-DOSE) -> ( 1.8 Gy , 45 Gy )
+( 4 , 29 , DOSE-DOSE) -> ( 1.8 Gy , boost )
+( 4 , 31 , DOSE-DOSE) -> ( 1.8 Gy , 1.8 Gy )
+( 4 , 39 , DOSE-DOSE) -> ( 1.8 Gy , boost )
+( 4 , 42 , DOSE-DOSE) -> ( 1.8 Gy , 14.4 Gy )
+( 4 , 56 , DOSE-DOSE) -> ( 1.8 Gy , 59.4 Gy )
+( 8 , 14 , DOSE-DOSE) -> ( 25 , 45 Gy )
+( 8 , 29 , DOSE-DOSE) -> ( 25 , boost )
+( 8 , 31 , DOSE-DOSE) -> ( 25 , 1.8 Gy )
+( 8 , 39 , DOSE-DOSE) -> ( 25 , boost )
+( 8 , 42 , DOSE-DOSE) -> ( 25 , 14.4 Gy )
+( 8 , 56 , DOSE-DOSE) -> ( 25 , 59.4 Gy )
+( 14 , 29 , DOSE-DOSE) -> ( 45 Gy , boost )
+( 14 , 31 , DOSE-DOSE) -> ( 45 Gy , 1.8 Gy )
+( 14 , 39 , DOSE-DOSE) -> ( 45 Gy , boost )
+( 14 , 42 , DOSE-DOSE) -> ( 45 Gy , 14.4 Gy )
+( 14 , 56 , DOSE-DOSE) -> ( 45 Gy , 59.4 Gy )
+( 29 , 31 , DOSE-DOSE) -> ( boost , 1.8 Gy )
+( 29 , 39 , DOSE-DOSE) -> ( boost , boost )
+( 29 , 42 , DOSE-DOSE) -> ( boost , 14.4 Gy )
+( 29 , 56 , DOSE-DOSE) -> ( boost , 59.4 Gy )
+( 31 , 39 , DOSE-DOSE) -> ( 1.8 Gy , boost )
+( 31 , 42 , DOSE-DOSE) -> ( 1.8 Gy , 14.4 Gy )
+( 31 , 56 , DOSE-DOSE) -> ( 1.8 Gy , 59.4 Gy )
+( 39 , 42 , DOSE-DOSE) -> ( boost , 14.4 Gy )
+( 42 , 56 , DOSE-DOSE) -> ( 14.4 Gy , 59.4 Gy )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 1.8 Gy fractions x 25 fractions , total dose of 45 Gy to the planning target volume ( PTV - 1 ) ; then a boost of 1.8 Gy fractions x 8 fractions , total boost dose of 14.4 Gy to the PTV - 2 , for a total cumulative dose of 59.4 Gy
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 1.8 Gy, source : rt_dose )	( 8 , 8 , 25, source : rt_fxno )
+( 14 , 15 , 45 Gy, source : rt_dose )	( 29 , 29 , boost, source : rt_boost )
+( 31 , 32 , 1.8 Gy, source : rt_dose )	( 29 , 29 , boost, source : rt_site )
+( 42 , 43 , 14.4 Gy, source : rt_dose )	( 39 , 39 , boost, source : rt_boost )
+( 56 , 57 , 59.4 Gy, source : rt_dose )	( 39 , 39 , boost, source : rt_site )
+
+
+
+4.
+
+Relation type counts:
+
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 1.8 Gy fractions x 25 fractions , for a total dose of 45 Gy to primary target volume. Then 5.4 Gy boost to secondary target volume of 1 - to 1.5 - cm margin on all sides , including proven nodal involvement. Total 50.4 Gy in 28 fractions .
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 1.8 Gy, source : rt_dose )	( 8 , 8 , 25, source : rt_fxno )
+( 16 , 17 , 45 Gy, source : rt_dose )	( 19 , 21 , primary target volume., source : rt_site )
+( 47 , 48 , 50.4 Gy, source : rt_dose )	( 25 , 25 , boost, source : rt_boost )
+			( 25 , 25 , boost, source : rt_site )
+			( 27 , 29 , secondary target volume, source : rt_site )
+			( 43 , 43 , proven, source : rt_site )
+			( 44 , 45 , nodal involvement., source : rt_site )
+			( 50 , 50 , 28, source : rt_fxno )
+
+
+
+5.
+
+Relation type counts:
+( DOSE-DOSE , 6 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 10 , 23 , DOSE-DOSE) -> ( 6 , 1320 cGy )
+
+Labels Inferred From Predictions:
+
+( 4 , 6 , DOSE-DOSE) -> ( 220 cGy , twice per day )
+( 4 , 10 , DOSE-DOSE) -> ( 220 cGy , 6 )
+( 4 , 23 , DOSE-DOSE) -> ( 220 cGy , 1320 cGy )
+( 6 , 10 , DOSE-DOSE) -> ( twice per day , 6 )
+( 6 , 23 , DOSE-DOSE) -> ( twice per day , 1320 cGy )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 220 cGy twice per day in 6 fractions on days - 6 to - 4 ( total dose : 1320 cGy )
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 220 cGy, source : rt_dose )	( 6 , 8 , twice per day, source : rt_fxfreq )
+( 23 , 24 , 1320 cGy, source : rt_dose )	( 10 , 10 , 6, source : rt_fxno )
+
+
+
+6.
+
+Relation type counts:
+( DOSE-DOSE , 3 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 8 , 16 , DOSE-DOSE) -> ( 25 , 50 Gy )
+
+Labels Inferred From Predictions:
+
+( 4 , 8 , DOSE-DOSE) -> ( 2 Gy , 25 )
+( 4 , 16 , DOSE-DOSE) -> ( 2 Gy , 50 Gy )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 2 Gy fractions x 25 fractions , for a total dose of 50 Gy , to start within 4 hours after the first dose of chemotherapy .
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 2 Gy, source : rt_dose )	( 8 , 8 , 25, source : rt_fxno )
+( 16 , 17 , 50 Gy, source : rt_dose )			
+
+
+
+7.
+
+Relation type counts:
+( DOSE-DOSE , 6 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 7 , 17 , DOSE-DOSE) -> ( once per day , 42 Gy )
+
+Labels Inferred From Predictions:
+
+( 4 , 7 , DOSE-DOSE) -> ( 2.8 Gy , once per day )
+( 4 , 11 , DOSE-DOSE) -> ( 2.8 Gy , 15 )
+( 4 , 17 , DOSE-DOSE) -> ( 2.8 Gy , 42 Gy )
+( 7 , 11 , DOSE-DOSE) -> ( once per day , 15 )
+( 11 , 17 , DOSE-DOSE) -> ( 15 , 42 Gy )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 2.8 Gy fractions once per day x 15 fractions ( total dose : 42 Gy ) over 3 weeks , given between the third and fourth chemotherapy courses
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 2.8 Gy, source : rt_dose )	( 7 , 9 , once per day, source : rt_fxfreq )
+( 17 , 18 , 42 Gy, source : rt_dose )	( 11 , 11 , 15, source : rt_fxno )
+
+
+
+8.
+
+Relation type counts:
+( DOSE-DOSE , 3 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 4 , 13 , DOSE-DOSE) -> ( 2 Gy , 60 Gy )
+
+Labels Inferred From Predictions:
+
+( 4 , 8 , DOSE-DOSE) -> ( 2 Gy , 30 )
+( 8 , 13 , DOSE-DOSE) -> ( 30 , 60 Gy )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 2 Gy fractions x 30 fractions ( total of 60 Gy )
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 2 Gy, source : rt_dose )	( 8 , 8 , 30, source : rt_fxno )
+( 13 , 14 , 60 Gy, source : rt_dose )			
+
+
+
+9.
+
+Relation type counts:
+( DOSE-DOSE , 3 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 7 , 14 , DOSE-DOSE) -> ( 32 , 57.6 Gy )
+
+Labels Inferred From Predictions:
+
+( 4 , 7 , DOSE-DOSE) -> ( 1.8 Gy , 32 )
+( 4 , 14 , DOSE-DOSE) -> ( 1.8 Gy , 57.6 Gy )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 1.8 Gy x 32 fractions , for a dose of 57.6 Gy
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 1.8 Gy, source : rt_dose )	( 7 , 7 , 32, source : rt_fxno )
+( 14 , 15 , 57.6 Gy, source : rt_dose )			
+
+
+
+10.
+
+Relation type counts:
+( DOSE-DOSE , 3 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 7 , 15 , DOSE-DOSE) -> ( 28 , 50.4 Gy )
+
+Labels Inferred From Predictions:
+
+( 4 , 7 , DOSE-DOSE) -> ( 1.8 Gy , 28 )
+( 4 , 15 , DOSE-DOSE) -> ( 1.8 Gy , 50.4 Gy )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 1.8 Gy x 28 fractions , for an initial dose of 50.4 Gy
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 1.8 Gy, source : rt_dose )	( 7 , 7 , 28, source : rt_fxno )
+( 15 , 16 , 50.4 Gy, source : rt_dose )			
+
+
+
+11.
+
+Relation type counts:
+( DOSE-DOSE , 1 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 4 , 13 , DOSE-DOSE) -> ( 1.8 to 2 Gy , 68.4 Gy )
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 1.8 to 2 Gy fractions ( total dose : 68.4 Gy )
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 7 , 1.8 to 2 Gy, source : rt_dose )			
+( 13 , 14 , 68.4 Gy, source : rt_dose )			
+
+
+
+12.
+
+Relation type counts:
+( DOSE-DOSE , 1 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 4 , 8 , DOSE-DOSE) -> ( 2.5 Gy , five fractions per week )
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 2.5 Gy fractions , five fractions per week
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 2.5 Gy, source : rt_dose )	( 8 , 11 , five fractions per week, source : rt_fxfreq )
+
+
+
+13.
+
+Relation type counts:
+( DOSE-SITE , 6 ) , ( DOSE-DOSE , 3 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 4 , 23 , DOSE-SITE) -> ( 200 cGy , 10 Gy )
+( 4 , 29 , DOSE-DOSE) -> ( 200 cGy , 1200 cGy )
+( 6 , 29 , DOSE-SITE) -> ( twice per day , 1200 cGy )
+
+Labels Inferred From Predictions:
+
+( 4 , 6 , DOSE-SITE) -> ( 200 cGy , twice per day )
+( 4 , 10 , DOSE-DOSE) -> ( 200 cGy , 6 )
+( 6 , 10 , DOSE-SITE) -> ( twice per day , 6 )
+( 10 , 23 , DOSE-SITE) -> ( 6 , 10 Gy )
+( 10 , 29 , DOSE-DOSE) -> ( 6 , 1200 cGy )
+( 23 , 29 , DOSE-SITE) -> ( 10 Gy , 1200 cGy )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 200 cGy twice per day in 6 fractions on days - 6 to - 4 with lung shielding at 10 Gy ( total dose : 1200 cGy )
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 200 cGy, source : rt_dose )	( 6 , 8 , twice per day, source : rt_fxfreq )
+( 23 , 24 , 10 Gy, source : rt_dose )	( 10 , 10 , 6, source : rt_fxno )
+( 29 , 30 , 1200 cGy, source : rt_dose )			
+
+
+
+14.
+
+Relation type counts:
+( DOSE-SITE , 1 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 4 , 8 , DOSE-SITE) -> ( 2 Gy , 35 )
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 2 Gy fractions x 35 fractions ( total dose
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 2 Gy, source : rt_dose )	( 8 , 8 , 35, source : rt_fxno )
+
+
+
+15.
+
+Relation type counts:
+( DOSE-SITE , 18 ) , ( DOSE-DOSE , 3 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 4 , 28 , DOSE-SITE) -> ( 1.2 Gy , hypopharynx )
+( 8 , 25 , DOSE-SITE) -> ( twice per day , 75.6 Gy )
+( 20 , 23 , DOSE-SITE) -> ( 80.4 Gy , oropharynx )
+( 25 , 28 , DOSE-SITE) -> ( 75.6 Gy , hypopharynx )
+
+Labels Inferred From Predictions:
+
+( 4 , 8 , DOSE-DOSE) -> ( 1.2 Gy , twice per day )
+( 4 , 12 , DOSE-DOSE) -> ( 1.2 Gy , 5 times per week )
+( 4 , 20 , DOSE-SITE) -> ( 1.2 Gy , 80.4 Gy )
+( 4 , 23 , DOSE-SITE) -> ( 1.2 Gy , oropharynx )
+( 4 , 25 , DOSE-SITE) -> ( 1.2 Gy , 75.6 Gy )
+( 8 , 12 , DOSE-SITE) -> ( twice per day , 5 times per week )
+( 8 , 20 , DOSE-SITE) -> ( twice per day , 80.4 Gy )
+( 8 , 23 , DOSE-SITE) -> ( twice per day , oropharynx )
+( 8 , 28 , DOSE-SITE) -> ( twice per day , hypopharynx )
+( 12 , 20 , DOSE-DOSE) -> ( 5 times per week , 80.4 Gy )
+( 12 , 23 , DOSE-SITE) -> ( 5 times per week , oropharynx )
+( 12 , 25 , DOSE-SITE) -> ( 5 times per week , 75.6 Gy )
+( 12 , 28 , DOSE-SITE) -> ( 5 times per week , hypopharynx )
+( 20 , 25 , DOSE-SITE) -> ( 80.4 Gy , 75.6 Gy )
+( 20 , 28 , DOSE-SITE) -> ( 80.4 Gy , hypopharynx )
+( 23 , 25 , DOSE-SITE) -> ( oropharynx , 75.6 Gy )
+( 23 , 28 , DOSE-SITE) -> ( oropharynx , hypopharynx )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 1.2 Gy fractions given twice per day , 5 times per week ( total dose : 80.4 Gy for oropharynx ; 75.6 Gy for hypopharynx )
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 1.2 Gy, source : rt_dose )	( 8 , 10 , twice per day, source : rt_fxfreq )
+( 20 , 21 , 80.4 Gy, source : rt_dose )	( 12 , 15 , 5 times per week, source : rt_fxfreq )
+( 25 , 26 , 75.6 Gy, source : rt_dose )	( 23 , 23 , oropharynx, source : rt_site )
+			( 28 , 28 , hypopharynx, source : rt_site )
+
+
+
+16.
+
+Relation type counts:
+( DOSE-DOSE , 6 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 4 , 8 , DOSE-DOSE) -> ( 2 Gy , 35 )
+
+Labels Inferred From Predictions:
+
+( 4 , 14 , DOSE-DOSE) -> ( 2 Gy , 70 Gy )
+( 4 , 19 , DOSE-DOSE) -> ( 2 Gy , 5 times per week )
+( 8 , 14 , DOSE-DOSE) -> ( 35 , 70 Gy )
+( 8 , 19 , DOSE-DOSE) -> ( 35 , 5 times per week )
+( 14 , 19 , DOSE-DOSE) -> ( 70 Gy , 5 times per week )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 2 Gy fractions x 35 fractions ( total dose : 70 Gy ) , given 5 times per week over 7 weeks
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 2 Gy, source : rt_dose )	( 8 , 8 , 35, source : rt_fxno )
+( 14 , 15 , 70 Gy, source : rt_dose )	( 19 , 22 , 5 times per week, source : rt_fxfreq )
+
+
+
+17.
+
+Relation type counts:
+( DOSE-SITE , 2 ) , ( DOSE-DOSE , 1 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 5 , 18 , DOSE-SITE) -> ( 1.8 Gy , 54 Gy )
+( 10 , 18 , DOSE-DOSE) -> ( 30 , 54 Gy )
+
+Labels Inferred From Predictions:
+
+( 5 , 10 , DOSE-SITE) -> ( 1.8 Gy , 30 )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> with 1.8 Gy fractions given in 30 fractions , for a total dose of 54 Gy
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 5 , 6 , 1.8 Gy, source : rt_dose )	( 10 , 10 , 30, source : rt_fxno )
+( 18 , 19 , 54 Gy, source : rt_dose )			
+
+
+
+18.
+
+Relation type counts:
+( DOSE-DOSE , 3 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 7 , 13 , DOSE-DOSE) -> ( 20 , 40 Gy )
+
+Labels Inferred From Predictions:
+
+( 4 , 7 , DOSE-DOSE) -> ( 2.0 Gy , 20 )
+( 4 , 13 , DOSE-DOSE) -> ( 2.0 Gy , 40 Gy )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 2.0 Gy x 20 fractions ( total dose : 40 Gy )
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 2.0 Gy, source : rt_dose )	( 7 , 7 , 20, source : rt_fxno )
+( 13 , 14 , 40 Gy, source : rt_dose )			
+
+
+
+19.
+
+Relation type counts:
+( DOSE-DOSE , 3 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 4 , 16 , DOSE-DOSE) -> ( 1.8 Gy , 41.4 Gy )
+
+Labels Inferred From Predictions:
+
+( 4 , 8 , DOSE-DOSE) -> ( 1.8 Gy , 23 )
+( 8 , 16 , DOSE-DOSE) -> ( 23 , 41.4 Gy )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 1.8 Gy fractions x 23 fractions , for a total dose of 41.4 Gy
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 1.8 Gy, source : rt_dose )	( 8 , 8 , 23, source : rt_fxno )
+( 16 , 17 , 41.4 Gy, source : rt_dose )			
+
+
+
+20.
+
+Relation type counts:
+( DOSE-DOSE , 3 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 8 , 14 , DOSE-DOSE) -> ( 20 , 55 Gy )
+
+Labels Inferred From Predictions:
+
+( 4 , 8 , DOSE-DOSE) -> ( 2.75 Gy , 20 )
+( 4 , 14 , DOSE-DOSE) -> ( 2.75 Gy , 55 Gy )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 2.75 Gy fractions x 20 fractions ( total dose : 55 Gy )
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 2.75 Gy, source : rt_dose )	( 8 , 8 , 20, source : rt_fxno )
+( 14 , 15 , 55 Gy, source : rt_dose )			
+
+
+
+21.
+
+Relation type counts:
+( DOSE-DOSE , 1 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 4 , 8 , DOSE-DOSE) -> ( 1.5 Gy , 12 )
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 1.5 Gy fractions x 12 fractions ( total dose
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 1.5 Gy, source : rt_dose )	( 8 , 8 , 12, source : rt_fxno )
+
+
+
+22.
+
+Relation type counts:
+( DOSE-DOSE , 3 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 8 , 16 , DOSE-DOSE) -> ( 20 , 40 Gy )
+
+Labels Inferred From Predictions:
+
+( 4 , 8 , DOSE-DOSE) -> ( 2.0 Gy , 20 )
+( 4 , 16 , DOSE-DOSE) -> ( 2.0 Gy , 40 Gy )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 2.0 Gy fractions x 20 fractions , for a total dose of 40 Gy
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 2.0 Gy, source : rt_dose )	( 8 , 8 , 20, source : rt_fxno )
+( 16 , 17 , 40 Gy, source : rt_dose )			
+
+
+
+23.
+
+Relation type counts:
+( DOSE-SITE , 3 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 8 , 13 , DOSE-SITE) -> ( 1.8 Gy , 25 )
+( 8 , 19 , DOSE-SITE) -> ( 1.8 Gy , 45 Gy )
+( 13 , 19 , DOSE-SITE) -> ( 25 , 45 Gy )
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> at a minimum : 1.8 Gy per day x 25 fractions ( total dose : 45 Gy ) , given over 5 weeks ; see articles for additional details
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 8 , 9 , 1.8 Gy, source : rt_dose )	( 13 , 13 , 25, source : rt_fxno )
+( 19 , 20 , 45 Gy, source : rt_dose )			
+
+
+
+24.
+
+Relation type counts:
+( DOSE-DOSE , 6 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 4 , 19 , DOSE-DOSE) -> ( 2 Gy , 5 times per week )
+
+Labels Inferred From Predictions:
+
+( 4 , 8 , DOSE-DOSE) -> ( 2 Gy , 30 )
+( 4 , 14 , DOSE-DOSE) -> ( 2 Gy , 60 Gy )
+( 8 , 14 , DOSE-DOSE) -> ( 30 , 60 Gy )
+( 8 , 19 , DOSE-DOSE) -> ( 30 , 5 times per week )
+( 14 , 19 , DOSE-DOSE) -> ( 60 Gy , 5 times per week )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 2 Gy fractions x 30 fractions ( total dose : 60 Gy ) , given 5 times per week
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 2 Gy, source : rt_dose )	( 8 , 8 , 30, source : rt_fxno )
+( 14 , 15 , 60 Gy, source : rt_dose )	( 19 , 22 , 5 times per week, source : rt_fxfreq )
+
+
+
+25.
+
+Relation type counts:
+( DOSE-DOSE , 3 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 4 , 14 , DOSE-DOSE) -> ( 1.8 Gy , 39.6 Gy )
+
+Labels Inferred From Predictions:
+
+( 4 , 8 , DOSE-DOSE) -> ( 1.8 Gy , 22 )
+( 8 , 14 , DOSE-DOSE) -> ( 22 , 39.6 Gy )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 1.8 Gy fractions x 22 fractions ( total dose : 39.6 Gy )
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 1.8 Gy, source : rt_dose )	( 8 , 8 , 22, source : rt_fxno )
+( 14 , 15 , 39.6 Gy, source : rt_dose )			
+
+
+
+26.
+
+Relation type counts:
+
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 54.4 Gy
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+
+
+
+
+27.
+
+Relation type counts:
+
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 66 Gy
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+
+
+
+
+28.
+
+Relation type counts:
+( DOSE-DOSE , 3 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 4 , 15 , DOSE-DOSE) -> ( 1.80 Gy , 50.4 Gy )
+
+Labels Inferred From Predictions:
+
+( 4 , 7 , DOSE-DOSE) -> ( 1.80 Gy , 28 )
+( 7 , 15 , DOSE-DOSE) -> ( 28 , 50.4 Gy )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 1.80 Gy for 28 fractions , for a total dose of 50.4 Gy
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 1.80 Gy, source : rt_dose )	( 7 , 7 , 28, source : rt_fxno )
+( 15 , 16 , 50.4 Gy, source : rt_dose )			
+
+
+
+29.
+
+Relation type counts:
+( DOSE-SITE , 14 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 5 , 9 , DOSE-SITE) -> ( primary unresected tumors , 1.8 to 2 Gy )
+( 5 , 18 , DOSE-SITE) -> ( primary unresected tumors , 65 to 70 Gy )
+( 5 , 27 , DOSE-SITE) -> ( primary unresected tumors , 60 Gy. )
+( 5 , 38 , DOSE-SITE) -> ( primary unresected tumors , 45 Gy )
+( 9 , 18 , DOSE-SITE) -> ( 1.8 to 2 Gy , 65 to 70 Gy )
+( 9 , 27 , DOSE-SITE) -> ( 1.8 to 2 Gy , 60 Gy. )
+( 9 , 34 , DOSE-SITE) -> ( 1.8 to 2 Gy , tumor )
+( 9 , 38 , DOSE-SITE) -> ( 1.8 to 2 Gy , 45 Gy )
+( 18 , 27 , DOSE-SITE) -> ( 65 to 70 Gy , 60 Gy. )
+( 18 , 34 , DOSE-SITE) -> ( 65 to 70 Gy , tumor )
+( 18 , 38 , DOSE-SITE) -> ( 65 to 70 Gy , 45 Gy )
+( 27 , 34 , DOSE-SITE) -> ( 60 Gy. , tumor )
+( 27 , 38 , DOSE-SITE) -> ( 60 Gy. , 45 Gy )
+( 34 , 38 , DOSE-SITE) -> ( tumor , 45 Gy )
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> to primary unresected tumors , 1.8 to 2 Gy fractions ( total dose : 65 to 70 Gy ) . Post-operative areas received 60 Gy. Nodal areas not involved by tumor received at least 45 Gy .
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 9 , 12 , 1.8 to 2 Gy, source : rt_dose )	( 5 , 7 , primary unresected tumors, source : rt_site )
+( 18 , 21 , 65 to 70 Gy, source : rt_dose )	( 34 , 34 , tumor, source : rt_site )
+( 27 , 28 , 60 Gy., source : rt_dose )			
+( 38 , 39 , 45 Gy, source : rt_dose )			
+
+
+
+30.
+
+Relation type counts:
+( DOSE-SITE , 7 ) , ( DOSE-BOOST , 5 ) , ( DOSE-DOSE , 3 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 4 , 7 , DOSE-BOOST) -> ( 36 Gy , 18 )
+( 4 , 11 , DOSE-BOOST) -> ( 36 Gy , 4 Gy )
+( 7 , 11 , DOSE-SITE) -> ( 18 , 4 Gy )
+( 11 , 15 , DOSE-DOSE) -> ( 4 Gy , involved fields )
+
+Labels Inferred From Predictions:
+
+( 4 , 13 , DOSE-BOOST) -> ( 36 Gy , boost )
+( 4 , 15 , DOSE-BOOST) -> ( 36 Gy , involved fields )
+( 7 , 4 , DOSE-SITE) -> ( 36 Gy , 18 )
+( 7 , 13 , DOSE-BOOST) -> ( 18 , boost )
+( 7 , 15 , DOSE-SITE) -> ( 18 , involved fields )
+( 11 , 4 , DOSE-SITE) -> ( 36 Gy , 4 Gy )
+( 11 , 13 , DOSE-DOSE) -> ( 4 Gy , boost )
+( 13 , 4 , DOSE-SITE) -> ( 36 Gy , boost )
+( 13 , 7 , DOSE-SITE) -> ( 18 , boost )
+( 13 , 15 , DOSE-DOSE) -> ( boost , involved fields )
+( 15 , 4 , DOSE-SITE) -> ( 36 Gy , involved fields )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 36 Gy in 18 fractions , with 4 Gy boost to involved fields
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 36 Gy, source : rt_dose )	( 7 , 7 , 18, source : rt_fxno )
+( 11 , 12 , 4 Gy, source : rt_dose )	( 13 , 13 , boost, source : rt_boost )
+			( 13 , 13 , boost, source : rt_site )
+			( 15 , 16 , involved fields, source : rt_site )
+
+
+
+31.
+
+Relation type counts:
+( DOSE-SITE , 3 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 4 , 7 , DOSE-SITE) -> ( 30 Gy , 10 Gy )
+( 4 , 11 , DOSE-SITE) -> ( 30 Gy , involved field )
+( 7 , 11 , DOSE-SITE) -> ( 10 Gy , involved field )
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 30 Gy + 10 Gy to the involved field
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 30 Gy, source : rt_dose )	( 11 , 12 , involved field, source : rt_site )
+( 7 , 8 , 10 Gy, source : rt_dose )			
+
+
+
+32.
+
+Relation type counts:
+
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 1.50 - Gy fractions
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+
+
+
+
+33.
+
+Relation type counts:
+( DOSE-SITE , 1 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 9 , 15 , DOSE-SITE) -> ( 10 Gy , twice per day )
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> with a total dose of 10 Gy over 3 days using twice per day fractions
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 9 , 10 , 10 Gy, source : rt_dose )	( 12 , 13 , 3 days, source : rt_fxfreq )
+			( 15 , 17 , twice per day, source : rt_fxfreq )
+
+
+
+34.
+
+Relation type counts:
+
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 44.8 Gy
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+
+
+
+
+35.
+
+Relation type counts:
+
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> total of 54 Gy given ( dose per fraction and total duration of treatment was not specified )
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+
+
+
+
+36.
+
+Relation type counts:
+
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> with a total dose of 12 Gy over 3 days ( days - 6 to - 4 ) in fractions
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+
+
+
+
+37.
+
+Relation type counts:
+
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 50.4 Gy total
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+
+
+
+
+38.
+
+Relation type counts:
+
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> to a total dose of at least 40 Gy
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+
+
+
+
+39.
+
+Relation type counts:
+( DOSE-SITE , 1 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 4 , 6 , DOSE-SITE) -> ( 2 Gy , once on )
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 2 Gy once on day - 1
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 2 Gy, source : rt_dose )	( 6 , 7 , once on, source : rt_fxfreq )
+
+
+
+40.
+
+Relation type counts:
+
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 2 Gy at a rate of 0.07 to 0.20 Gy / min on day 0
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+
+
+
+
+41.
+
+Relation type counts:
+( DOSE-SITE , 5 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 6 , 12 , DOSE-SITE) -> ( nasal cavity , 56 Gy )
+( 10 , 12 , DOSE-SITE) -> ( sinuses , 56 Gy )
+( 12 , 15 , DOSE-SITE) -> ( 56 Gy , 28 )
+( 12 , 18 , DOSE-SITE) -> ( 56 Gy , once per day , )
+( 12 , 22 , DOSE-SITE) -> ( 56 Gy , five days per week )
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> to the nasal cavity and surrounding sinuses , 56 Gy in 28 fractions , once per day , five days per week
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 12 , 13 , 56 Gy, source : rt_dose )	( 6 , 7 , nasal cavity, source : rt_site )
+			( 10 , 10 , sinuses, source : rt_site )
+			( 15 , 15 , 28, source : rt_fxno )
+			( 18 , 21 , once per day ,, source : rt_fxfreq )
+			( 22 , 25 , five days per week, source : rt_fxfreq )
+
+
+
+42.
+
+Relation type counts:
+
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> total dose 70 to 74 Gy
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+
+
+
+
+43.
+
+Relation type counts:
+( DOSE-SITE , 3 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 4 , 7 , DOSE-SITE) -> ( 50.4 Gy , proton )
+( 4 , 9 , DOSE-SITE) -> ( 50.4 Gy , photon )
+( 4 , 16 , DOSE-SITE) -> ( 50.4 Gy , 28 )
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 50.4 Gy of proton or photon ( intensity modulated ) radiation in 28 fractions
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 50.4 Gy, source : rt_dose )	( 7 , 7 , proton, source : rt_site )
+			( 9 , 9 , photon, source : rt_site )
+			( 16 , 16 , 28, source : rt_fxno )
+
+
+
+44.
+
+Relation type counts:
+( DOSE-SITE , 1 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 4 , 8 , DOSE-SITE) -> ( 3 Gy , five fractions per week )
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 3 Gy fractions , five fractions per week
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 3 Gy, source : rt_dose )	( 8 , 11 , five fractions per week, source : rt_fxfreq )
+
+
+
+45.
+
+Relation type counts:
+( DOSE-SITE , 1 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 4 , 10 , DOSE-SITE) -> ( 36 Gy , bulky disease )
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 36 Gy to areas of initial bulky disease
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 36 Gy, source : rt_dose )	( 10 , 11 , bulky disease, source : rt_site )
+
+
+
+46.
+
+Relation type counts:
+( DOSE-SITE , 1 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 5 , 8 , DOSE-SITE) -> ( 45 Gy , 1.5 - Gy )
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> to 45 Gy in 1.5 - Gy fractions
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 5 , 6 , 45 Gy, source : rt_dose )			
+( 8 , 10 , 1.5 - Gy, source : rt_dose )			
+
+
+
+47.
+
+Relation type counts:
+( DOSE-DOSE , 1 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 5 , 8 , DOSE-DOSE) -> ( 30 Gy , 1.80 - Gy )
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> to 30 Gy in 1.80 - Gy fractions
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 5 , 6 , 30 Gy, source : rt_dose )			
+( 8 , 10 , 1.80 - Gy, source : rt_dose )			
+
+
+
+48.
+
+Relation type counts:
+( DOSE-DOSE , 9 ) , ( DOSE-SITE , 1 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 6 , 12 , DOSE-SITE) -> ( 32 , 50 Gy )
+( 18 , 29 , DOSE-DOSE) -> ( 14 Gy , 64 Gy )
+
+Labels Inferred From Predictions:
+
+( 6 , 18 , DOSE-DOSE) -> ( 32 , 14 Gy )
+( 6 , 22 , DOSE-DOSE) -> ( 32 , boost field )
+( 6 , 29 , DOSE-DOSE) -> ( 32 , 64 Gy )
+( 12 , 18 , DOSE-DOSE) -> ( 50 Gy , 14 Gy )
+( 12 , 22 , DOSE-DOSE) -> ( 50 Gy , boost field )
+( 12 , 29 , DOSE-DOSE) -> ( 50 Gy , 64 Gy )
+( 18 , 22 , DOSE-DOSE) -> ( 14 Gy , boost field )
+( 22 , 29 , DOSE-DOSE) -> ( boost field , 64 Gy )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> total of 32 fractions in 6.4 weeks : 50 Gy of regional treatment and 14 Gy to the boost field , for total dose of 64 Gy
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 12 , 13 , 50 Gy, source : rt_dose )	( 6 , 6 , 32, source : rt_fxno )
+( 18 , 19 , 14 Gy, source : rt_dose )	( 22 , 22 , boost, source : rt_boost )
+( 29 , 30 , 64 Gy, source : rt_dose )	( 22 , 23 , boost field, source : rt_site )
+
+
+
+49.
+
+Relation type counts:
+( DOSE-SITE , 2 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 5 , 8 , DOSE-SITE) -> ( 56 Gy , 28 )
+( 5 , 11 , DOSE-SITE) -> ( 56 Gy , 5 fractions per week )
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> to 56 Gy in 28 fractions , 5 fractions per week
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 5 , 6 , 56 Gy, source : rt_dose )	( 8 , 8 , 28, source : rt_fxno )
+			( 11 , 14 , 5 fractions per week, source : rt_fxfreq )
+
+
+
+50.
+
+Relation type counts:
+( DOSE-DOSE , 3 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 4 , 10 , DOSE-DOSE) -> ( 36 Gy , 2.00 Gy )
+
+Labels Inferred From Predictions:
+
+( 4 , 7 , DOSE-DOSE) -> ( 36 Gy , 18 )
+( 7 , 10 , DOSE-DOSE) -> ( 18 , 2.00 Gy )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 36 Gy in 18 fractions of 2.00 Gy per fraction
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 36 Gy, source : rt_dose )	( 7 , 7 , 18, source : rt_fxno )
+( 10 , 11 , 2.00 Gy, source : rt_dose )			
+
+
+
+51.
+
+Relation type counts:
+
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 55 Gy )
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+
+
+
+
+52.
+
+Relation type counts:
+
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 35 Gy in 20 fractions
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 35 Gy, source : rt_dose )	( 7 , 7 , 20, source : rt_fxno )
+
+
+
+53.
+
+Relation type counts:
+
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 45 Gy total
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+
+
+
+
+54.
+
+Relation type counts:
+( DOSE-SITE , 2 ) , ( DOSE-DOSE , 1 )
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+( 4 , 6 , DOSE-SITE) -> ( 800 cGy , once per day )
+( 4 , 17 , DOSE-DOSE) -> ( 800 cGy , 10 )
+
+Labels Inferred From Predictions:
+
+( 6 , 17 , DOSE-SITE) -> ( once per day , 10 )
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr> 800 cGy once per day on days - 11 to - 1 ( 10 fractions
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+( 4 , 5 , 800 cGy, source : rt_dose )	( 6 , 8 , once per day, source : rt_fxfreq )
+			( 17 , 17 , 10, source : rt_fxno )
+
+
+
+55.
+
+Relation type counts:
+
+
+Predicted positive labels:
+
+Model Predicted Labels:
+
+
+
+Labels Inferred From Predictions:
+
+
+
+
+
+Ground truth paragraph:
+
+<cr> <cr> <cr> <cr>
+
+Discovered Entities
+
+Anchor mentions:	Signature mentions:
+
+
+
+
+

@@ -1,0 +1,369 @@
+Training parameters:
+
+Training set size 5512
+Batch size 8
+Batches per epoch: 689
+
+Total steps: 3445
+------------------------------Projected training epochs: 20.0
+actual_steps: -1Eval arguments:
+
+Steps per epoch: 172
+Evals per epoch: 2
+Eval steps: 86
+
+Training parameters:
+
+Training set size 5512
+Batch size 8
+Batches per epoch: 689
+
+Total steps: 3445
+------------------------------Projected training epochs: 20.0
+actual_steps: -1Eval arguments:
+
+Steps per epoch: 172
+Evals per epoch: 2
+Eval steps: 86
+
+Training parameters:
+
+Training set size 5512
+Batch size 8
+Batches per epoch: 689
+
+Total steps: 3445
+------------------------------Projected training epochs: 20.0
+actual_steps: -1Eval arguments:
+
+Steps per epoch: 172
+Evals per epoch: 2
+Eval steps: 86
+
+Training parameters:
+
+Training set size 5512
+Batch size 8
+Batches per epoch: 689
+
+Total steps: 3445
+------------------------------Projected training epochs: 20.0
+actual_steps: -1Eval arguments:
+
+Steps per epoch: 172
+Evals per epoch: 2
+Eval steps: 86
+
+
+
+***** Eval results for task rt_rel *****
+
+acc = 0.9022892238972641
+f1 = [0.948635162899912, 0.0, 0.0, 0.0, 0.0, 0.0]
+acc_and_f1 = [0.925462193398588, 0.45114461194863203, 0.45114461194863203, 0.45114461194863203, 0.45114461194863203, 0.45114461194863203]
+recall = [1.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+precision = [0.9022892238972641, 0.0, 0.0, 0.0, 0.0, 0.0]
+support = [1616, 7, 58, 22, 51, 37]
+total_classes = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in labels = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in predictions = ['None']
+
+
+***** Eval results for task rt_rel *****
+
+acc = 0.914572864321608
+f1 = [0.9582457194352658, 0.0, 0.0, 0.0, 0.6666666666666667, 0.0]
+acc_and_f1 = [0.9364092918784369, 0.457286432160804, 0.457286432160804, 0.457286432160804, 0.7906197654941374, 0.457286432160804]
+recall = [0.9870049504950495, 0.0, 0.0, 0.0, 0.8431372549019608, 0.0]
+precision = [0.9311150029188558, 0.0, 0.0, 0.0, 0.5512820512820513, 0.0]
+support = [1616, 7, 58, 22, 51, 37]
+total_classes = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in labels = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in predictions = ['None', 'DOSE-FXNO']
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.0 
+curr_epoch : 0.49927431059506533 
+max_epochs : 20 
+curr_step : 86 
+max_steps : 3440 
+best_step : 86 
+best_epoch : 0.49927431059506533 
+
+
+***** Eval results for task rt_rel *****
+
+acc = 0.9128978224455612
+f1 = [0.953409441530392, 0.0, 0.5125000000000001, 0.711111111111111, 0.717391304347826, 0.0]
+acc_and_f1 = [0.9331536319879765, 0.4564489112227806, 0.7126989112227806, 0.8120044667783362, 0.8151445633966936, 0.4564489112227806]
+recall = [0.9560643564356436, 0.0, 0.7068965517241379, 0.7272727272727273, 0.6470588235294118, 0.0]
+precision = [0.9507692307692308, 0.0, 0.4019607843137255, 0.6956521739130435, 0.8048780487804879, 0.0]
+support = [1616, 7, 58, 22, 51, 37]
+total_classes = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in labels = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in predictions = ['None', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO']
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.13333333333333336 
+curr_epoch : 0.9985486211901307 
+max_epochs : 20 
+curr_step : 172 
+max_steps : 3440 
+best_step : 172 
+best_epoch : 0.9985486211901307 
+
+
+***** Eval results for task rt_rel *****
+
+acc = 0.937465103294249
+f1 = [0.9668011169717654, 0.0, 0.6, 0.7391304347826088, 0.8571428571428571, 0.5633802816901409]
+acc_and_f1 = [0.9521331101330073, 0.4687325516471245, 0.7687325516471245, 0.8382977690384289, 0.8973039802185531, 0.750422692492195]
+recall = [0.9641089108910891, 0.0, 0.6724137931034483, 0.7727272727272727, 0.8823529411764706, 0.5405405405405406]
+precision = [0.9695084007467331, 0.0, 0.5416666666666666, 0.7083333333333334, 0.8333333333333334, 0.5882352941176471]
+support = [1616, 7, 58, 22, 51, 37]
+total_classes = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in labels = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in predictions = ['None', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.38820048309178745 
+curr_epoch : 1.4992743105950654 
+max_epochs : 20 
+curr_step : 258 
+max_steps : 3440 
+best_step : 258 
+best_epoch : 1.4992743105950654 
+
+
+***** Eval results for task rt_rel *****
+
+acc = 0.9424902289223898
+f1 = [0.9696406443618341, 0.0, 0.6379310344827587, 0.7391304347826088, 0.8431372549019607, 0.6265060240963856]
+acc_and_f1 = [0.956065436642112, 0.4712451144611949, 0.7902106317025742, 0.8408103318524993, 0.8928137419121752, 0.7844981265093877]
+recall = [0.968440594059406, 0.0, 0.6379310344827587, 0.7727272727272727, 0.8431372549019608, 0.7027027027027027]
+precision = [0.9708436724565757, 0.0, 0.6379310344827587, 0.7083333333333334, 0.8431372549019608, 0.5652173913043478]
+support = [1616, 7, 58, 22, 51, 37]
+total_classes = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in labels = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in predictions = ['None', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.5519307147231214 
+curr_epoch : 1.9985486211901307 
+max_epochs : 20 
+curr_step : 344 
+max_steps : 3440 
+best_step : 344 
+best_epoch : 1.9985486211901307 
+
+
+***** Eval results for task rt_rel *****
+
+acc = 0.9385817978782803
+f1 = [0.9661538461538461, 0.8571428571428571, 0.6865671641791046, 0.7234042553191491, 0.84, 0.0]
+acc_and_f1 = [0.9523678220160632, 0.8978623275105687, 0.8125744810286925, 0.8309930265987147, 0.8892908989391402, 0.46929089893914017]
+recall = [0.9715346534653465, 0.8571428571428571, 0.7931034482758621, 0.7727272727272727, 0.8235294117647058, 0.0]
+precision = [0.9608323133414932, 0.8571428571428571, 0.6052631578947368, 0.68, 0.8571428571428571, 0.0]
+support = [1616, 7, 58, 22, 51, 37]
+total_classes = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in labels = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in predictions = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO']
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.5693409496527426 
+curr_epoch : 4.998548621190131 
+max_epochs : 20 
+curr_step : 860 
+max_steps : 3440 
+best_step : 430 
+best_epoch : 2.4992743105950654 
+
+
+***** Eval results for task rt_rel *****
+
+acc = 0.9503070910106086
+f1 = [0.9726238080590588, 0.7692307692307692, 0.7522935779816514, 0.7142857142857143, 0.8172043010752689, 0.5945945945945946]
+acc_and_f1 = [0.9614654495348337, 0.8597689301206889, 0.8513003344961301, 0.8322964026481614, 0.8837556960429387, 0.7724508428026016]
+recall = [0.9783415841584159, 0.7142857142857143, 0.7068965517241379, 0.6818181818181818, 0.7450980392156863, 0.5945945945945946]
+precision = [0.9669724770642202, 0.8333333333333334, 0.803921568627451, 0.75, 0.9047619047619048, 0.5945945945945946]
+support = [1616, 7, 58, 22, 51, 37]
+total_classes = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in labels = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in predictions = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.6214228553282222 
+curr_epoch : 5.499274310595065 
+max_epochs : 20 
+curr_step : 946 
+max_steps : 3440 
+best_step : 946 
+best_epoch : 5.499274310595065 
+
+
+***** Eval results for task rt_rel *****
+
+acc = 0.9491903964265773
+f1 = [0.9718527683266316, 0.7999999999999999, 0.7377049180327868, 0.7317073170731707, 0.8333333333333334, 0.6133333333333333]
+acc_and_f1 = [0.9605215823766045, 0.8745951982132887, 0.8434476572296821, 0.840448856749874, 0.8912618648799553, 0.7812618648799553]
+recall = [0.9721534653465347, 0.8571428571428571, 0.7758620689655172, 0.6818181818181818, 0.7843137254901961, 0.6216216216216216]
+precision = [0.9715522572665429, 0.75, 0.703125, 0.7894736842105263, 0.8888888888888888, 0.6052631578947368]
+support = [1616, 7, 58, 22, 51, 37]
+total_classes = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in labels = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in predictions = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.7295217914335997 
+curr_epoch : 5.998548621190131 
+max_epochs : 20 
+curr_step : 1032 
+max_steps : 3440 
+best_step : 1032 
+best_epoch : 5.998548621190131 
+
+
+***** Eval results for task rt_rel *****
+
+acc = 0.9564489112227805
+f1 = [0.9758064516129032, 0.8235294117647058, 0.7586206896551724, 0.7916666666666666, 0.854368932038835, 0.7027027027027027]
+acc_and_f1 = [0.9661276814178419, 0.8899891614937432, 0.8575348004389765, 0.8740577889447236, 0.9054089216308078, 0.8295758069627417]
+recall = [0.9733910891089109, 1.0, 0.7586206896551724, 0.8636363636363636, 0.8627450980392157, 0.7027027027027027]
+precision = [0.9782338308457711, 0.7, 0.7586206896551724, 0.7307692307692307, 0.8461538461538461, 0.7027027027027027]
+support = [1616, 7, 58, 22, 51, 37]
+total_classes = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in labels = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in predictions = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.743215780354525 
+curr_epoch : 6.998548621190131 
+max_epochs : 20 
+curr_step : 1204 
+max_steps : 3440 
+best_step : 1118 
+best_epoch : 6.499274310595065 
+
+
+***** Eval results for task rt_rel *****
+
+acc = 0.96035734226689
+f1 = [0.9780389730900093, 0.8235294117647058, 0.7758620689655173, 0.8095238095238095, 0.888888888888889, 0.6933333333333334]
+acc_and_f1 = [0.9691981576784496, 0.8919433770157978, 0.8681097056162037, 0.8849405758953497, 0.9246231155778895, 0.8268453378001117]
+recall = [0.9783415841584159, 1.0, 0.7758620689655172, 0.7727272727272727, 0.8627450980392157, 0.7027027027027027]
+precision = [0.9777365491651205, 0.7, 0.7758620689655172, 0.85, 0.9166666666666666, 0.6842105263157895]
+support = [1616, 7, 58, 22, 51, 37]
+total_classes = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in labels = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in predictions = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.7861776805656164 
+curr_epoch : 7.499274310595065 
+max_epochs : 20 
+curr_step : 1290 
+max_steps : 3440 
+best_step : 1290 
+best_epoch : 7.499274310595065 
+
+
+***** Eval results for task rt_rel *****
+
+acc = 0.9620323841429369
+f1 = [0.9789603960396039, 0.8235294117647058, 0.8, 0.8372093023255814, 0.8910891089108911, 0.6756756756756757]
+acc_and_f1 = [0.9704963900912704, 0.8927808979538214, 0.8810161920714685, 0.8996208432342592, 0.926560746526914, 0.8188540299093063]
+recall = [0.9789603960396039, 1.0, 0.7931034482758621, 0.8181818181818182, 0.8823529411764706, 0.6756756756756757]
+precision = [0.9789603960396039, 0.7, 0.8070175438596491, 0.8571428571428571, 0.9, 0.6756756756756757]
+support = [1616, 7, 58, 22, 51, 37]
+total_classes = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in labels = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in predictions = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.798227502495251 
+curr_epoch : 7.998548621190131 
+max_epochs : 20 
+curr_step : 1376 
+max_steps : 3440 
+best_step : 1376 
+best_epoch : 7.998548621190131 
+
+
+***** Eval results for task rt_rel *****
+
+acc = 0.9625907314349526
+f1 = [0.9792890262751159, 0.8235294117647058, 0.7964601769911505, 0.8372093023255814, 0.9, 0.6756756756756757]
+acc_and_f1 = [0.9709398788550343, 0.8930600715998291, 0.8795254542130515, 0.899900016880267, 0.9312953657174763, 0.819133203555314]
+recall = [0.9801980198019802, 1.0, 0.7758620689655172, 0.8181818181818182, 0.8823529411764706, 0.6756756756756757]
+precision = [0.9783817171093268, 0.7, 0.8181818181818182, 0.8571428571428571, 0.9183673469387755, 0.6756756756756757]
+support = [1616, 7, 58, 22, 51, 37]
+total_classes = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in labels = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in predictions = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.8055006997353708 
+curr_epoch : 8.99854862119013 
+max_epochs : 20 
+curr_step : 1548 
+max_steps : 3440 
+best_step : 1462 
+best_epoch : 8.499274310595066 
+
+
+***** Eval results for task rt_rel *****
+
+acc = 0.9676158570630933
+f1 = [0.9821098087600245, 0.8571428571428571, 0.8288288288288289, 0.8780487804878049, 0.9, 0.7027027027027027]
+acc_and_f1 = [0.974862832911559, 0.9123793571029752, 0.898222342945961, 0.922832318775449, 0.9338079285315466, 0.835159279882898]
+recall = [0.9851485148514851, 0.8571428571428571, 0.7931034482758621, 0.8181818181818182, 0.8823529411764706, 0.7027027027027027]
+precision = [0.9790897908979089, 0.8571428571428571, 0.8679245283018868, 0.9473684210526315, 0.9183673469387755, 0.7027027027027027]
+support = [1616, 7, 58, 22, 51, 37]
+total_classes = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in labels = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+classes present in predictions = ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']
+
+
+ Current state (In Compute Metrics Function) 
+
+best_score : 0.8065749133514227 
+curr_epoch : 16.99854862119013 
+max_epochs : 20 
+curr_step : 2924 
+max_steps : 3440 
+best_step : 1634 
+best_epoch : 9.499274310595066 
+rt_rel = {'acc': 0.9676158570630933, 'f1': [0.9821098087600245, 0.8571428571428571, 0.8288288288288289, 0.8780487804878049, 0.9, 0.7027027027027027], 'acc_and_f1': [0.974862832911559, 0.9123793571029752, 0.898222342945961, 0.922832318775449, 0.9338079285315466, 0.835159279882898], 'recall': [0.9851485148514851, 0.8571428571428571, 0.7931034482758621, 0.8181818181818182, 0.8823529411764706, 0.7027027027027027], 'precision': [0.9790897908979089, 0.8571428571428571, 0.8679245283018868, 0.9473684210526315, 0.9183673469387755, 0.7027027027027027], 'support': [1616, 7, 58, 22, 51, 37], 'total_classes': ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE'], 'classes present in labels': ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE'], 'classes present in predictions': ['None', 'DOSE-BOOST', 'DOSE-DOSE', 'DOSE-FXFREQ', 'DOSE-FXNO', 'DOSE-SITE']}
+
+
+ Current state (In do_eval (End?)) 
+
+best_score : 0.8333446338324387 
+curr_epoch : 19.99854862119013 
+max_epochs : 20 
+curr_step : 3440 
+max_steps : 3440 
+best_step : 3010 
+best_epoch : 17.499274310595066 

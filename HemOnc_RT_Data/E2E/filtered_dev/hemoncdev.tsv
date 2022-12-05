@@ -1,0 +1,55 @@
+(5,8,DOSE-SITE)	for a total dose of 80.8 Gy to point A
+(18,28,DOSE-DOSE) , (18,34,DOSE-SITE) , (28,34,DOSE-SITE)	<cr> <cr> <cr> <cr> is started 2 months after start of androgen deprivation therapy ( ADT ) , 1.8 to 2 Gy per fraction , with an initial 44 to 46 Gy to the pelvis , then an additional conedown to the prostate that resulted in a total dose of 65 to 70 Gy
+(4,8,DOSE-FXNO) , (4,14,DOSE-DOSE) , (4,18,DOSE-SITE) , (4,22,DOSE-SITE) , (8,14,DOSE-FXNO) , (14,18,DOSE-SITE) , (14,22,DOSE-SITE) , (29,31,DOSE-BOOST) , (29,31,DOSE-SITE) , (29,42,DOSE-BOOST) , (29,42,DOSE-SITE) , (31,35,DOSE-FXNO) , (31,39,DOSE-SITE) , (31,39,DOSE-BOOST) , (31,42,DOSE-DOSE) , (31,46,DOSE-SITE) , (35,42,DOSE-FXNO) , (39,42,DOSE-SITE) , (39,42,DOSE-BOOST) , (42,46,DOSE-SITE)	<cr> <cr> <cr> <cr> 1.8 Gy fractions x 25 fractions , total dose of 45 Gy to the planning target volume ( PTV - 1 ) ; then a boost of 1.8 Gy fractions x 8 fractions , total boost dose of 14.4 Gy to the PTV - 2 , for a total cumulative dose of 59.4 Gy
+(4,8,DOSE-FXNO) , (4,16,DOSE-DOSE) , (4,19,DOSE-SITE) , (8,16,DOSE-FXNO) , (16,19,DOSE-SITE) , (23,25,DOSE-BOOST) , (23,25,DOSE-SITE) , (23,27,DOSE-SITE) , (23,31,DOSE-SITE) , (23,44,DOSE-SITE) , (47,50,DOSE-FXNO)	<cr> <cr> <cr> <cr> 1.8 Gy fractions x 25 fractions , for a total dose of 45 Gy to primary target volume. Then 5.4 Gy boost to secondary target volume of 1 - to 1.5 - cm margin on all sides , including proven nodal involvement. Total 50.4 Gy in 28 fractions .
+(4,6,DOSE-FXFREQ) , (4,10,DOSE-FXNO) , (4,23,DOSE-DOSE) , (6,23,DOSE-FXFREQ) , (10,23,DOSE-FXNO)	<cr> <cr> <cr> <cr> 220 cGy twice per day in 6 fractions on days - 6 to - 4 ( total dose : 1320 cGy )
+(4,8,DOSE-FXNO) , (4,16,DOSE-DOSE) , (8,16,DOSE-FXNO)	<cr> <cr> <cr> <cr> 2 Gy fractions x 25 fractions , for a total dose of 50 Gy , to start within 4 hours after the first dose of chemotherapy .
+(4,7,DOSE-FXFREQ) , (4,11,DOSE-FXNO) , (4,17,DOSE-DOSE) , (7,17,DOSE-FXFREQ) , (11,17,DOSE-FXNO)	<cr> <cr> <cr> <cr> 2.8 Gy fractions once per day x 15 fractions ( total dose : 42 Gy ) over 3 weeks , given between the third and fourth chemotherapy courses
+(4,8,DOSE-FXNO) , (4,13,DOSE-DOSE) , (8,13,DOSE-FXNO)	<cr> <cr> <cr> <cr> 2 Gy fractions x 30 fractions ( total of 60 Gy )
+(4,7,DOSE-FXNO) , (4,14,DOSE-DOSE) , (7,14,DOSE-FXNO)	<cr> <cr> <cr> <cr> 1.8 Gy x 32 fractions , for a dose of 57.6 Gy
+(4,7,DOSE-FXNO) , (4,15,DOSE-DOSE) , (7,15,DOSE-FXNO)	<cr> <cr> <cr> <cr> 1.8 Gy x 28 fractions , for an initial dose of 50.4 Gy
+(4,13,DOSE-DOSE)	<cr> <cr> <cr> <cr> 1.8 to 2 Gy fractions ( total dose : 68.4 Gy )
+(4,8,DOSE-FXFREQ)	<cr> <cr> <cr> <cr> 2.5 Gy fractions , five fractions per week
+(4,6,DOSE-FXFREQ) , (4,10,DOSE-FXNO) , (4,29,DOSE-DOSE) , (6,29,DOSE-FXFREQ) , (10,29,DOSE-FXNO)	<cr> <cr> <cr> <cr> 200 cGy twice per day in 6 fractions on days - 6 to - 4 with lung shielding at 10 Gy ( total dose : 1200 cGy )
+(4,8,DOSE-FXNO)	<cr> <cr> <cr> <cr> 2 Gy fractions x 35 fractions ( total dose
+(4,8,DOSE-FXFREQ) , (4,12,DOSE-FXFREQ) , (4,20,DOSE-DOSE) , (4,23,DOSE-SITE) , (4,25,DOSE-DOSE) , (4,28,DOSE-SITE) , (8,20,DOSE-FXFREQ) , (8,25,DOSE-FXFREQ) , (12,20,DOSE-FXFREQ) , (12,25,DOSE-FXFREQ) , (20,23,DOSE-SITE) , (20,25,DOSE-DOSE) , (20,28,DOSE-SITE) , (23,25,DOSE-SITE) , (25,28,DOSE-SITE)	<cr> <cr> <cr> <cr> 1.2 Gy fractions given twice per day , 5 times per week ( total dose : 80.4 Gy for oropharynx ; 75.6 Gy for hypopharynx )
+(4,8,DOSE-FXNO) , (4,14,DOSE-DOSE) , (4,19,DOSE-FXFREQ) , (8,14,DOSE-FXNO) , (14,19,DOSE-FXFREQ)	<cr> <cr> <cr> <cr> 2 Gy fractions x 35 fractions ( total dose : 70 Gy ) , given 5 times per week over 7 weeks
+(5,10,DOSE-FXNO) , (5,18,DOSE-DOSE) , (10,18,DOSE-FXNO)	<cr> <cr> <cr> <cr> with 1.8 Gy fractions given in 30 fractions , for a total dose of 54 Gy
+(4,7,DOSE-FXNO) , (4,13,DOSE-DOSE) , (7,13,DOSE-FXNO)	<cr> <cr> <cr> <cr> 2.0 Gy x 20 fractions ( total dose : 40 Gy )
+(4,8,DOSE-FXNO) , (4,16,DOSE-DOSE) , (8,16,DOSE-FXNO)	<cr> <cr> <cr> <cr> 1.8 Gy fractions x 23 fractions , for a total dose of 41.4 Gy
+(4,8,DOSE-FXNO) , (4,14,DOSE-DOSE) , (8,14,DOSE-FXNO)	<cr> <cr> <cr> <cr> 2.75 Gy fractions x 20 fractions ( total dose : 55 Gy )
+(4,8,DOSE-FXNO)	<cr> <cr> <cr> <cr> 1.5 Gy fractions x 12 fractions ( total dose
+(4,8,DOSE-FXNO) , (4,16,DOSE-DOSE) , (8,16,DOSE-FXNO)	<cr> <cr> <cr> <cr> 2.0 Gy fractions x 20 fractions , for a total dose of 40 Gy
+(8,13,DOSE-FXNO) , (8,19,DOSE-DOSE) , (13,19,DOSE-FXNO)	<cr> <cr> <cr> <cr> at a minimum : 1.8 Gy per day x 25 fractions ( total dose : 45 Gy ) , given over 5 weeks ; see articles for additional details
+(4,8,DOSE-FXNO) , (4,14,DOSE-DOSE) , (4,19,DOSE-FXFREQ) , (8,14,DOSE-FXNO) , (14,19,DOSE-FXFREQ)	<cr> <cr> <cr> <cr> 2 Gy fractions x 30 fractions ( total dose : 60 Gy ) , given 5 times per week
+(4,8,DOSE-FXNO) , (4,14,DOSE-DOSE) , (8,14,DOSE-FXNO)	<cr> <cr> <cr> <cr> 1.8 Gy fractions x 22 fractions ( total dose : 39.6 Gy )
+None	<cr> <cr> <cr> <cr> 54.4 Gy
+None	<cr> <cr> <cr> <cr> 66 Gy
+(4,7,DOSE-FXNO) , (4,15,DOSE-DOSE) , (7,15,DOSE-FXNO)	<cr> <cr> <cr> <cr> 1.80 Gy for 28 fractions , for a total dose of 50.4 Gy
+(6,9,DOSE-SITE) , (6,18,DOSE-SITE) , (9,18,DOSE-DOSE) , (24,27,DOSE-SITE) , (29,38,DOSE-SITE)	<cr> <cr> <cr> <cr> to primary unresected tumors , 1.8 to 2 Gy fractions ( total dose : 65 to 70 Gy ) . Post-operative areas received 60 Gy. Nodal areas not involved by tumor received at least 45 Gy .
+(4,7,DOSE-FXNO) , (11,13,DOSE-SITE) , (11,13,DOSE-BOOST) , (11,15,DOSE-SITE)	<cr> <cr> <cr> <cr> 36 Gy in 18 fractions , with 4 Gy boost to involved fields
+(7,11,DOSE-SITE)	<cr> <cr> <cr> <cr> 30 Gy + 10 Gy to the involved field
+None	<cr> <cr> <cr> <cr> 1.50 - Gy fractions
+(9,15,DOSE-FXFREQ)	<cr> <cr> <cr> <cr> with a total dose of 10 Gy over 3 days using twice per day fractions
+None	<cr> <cr> <cr> <cr> 44.8 Gy
+None	<cr> <cr> <cr> <cr> total of 54 Gy given ( dose per fraction and total duration of treatment was not specified )
+None	<cr> <cr> <cr> <cr> with a total dose of 12 Gy over 3 days ( days - 6 to - 4 ) in fractions
+None	<cr> <cr> <cr> <cr> 50.4 Gy total
+None	<cr> <cr> <cr> <cr> to a total dose of at least 40 Gy
+(4,6,DOSE-FXNO)	<cr> <cr> <cr> <cr> 2 Gy once on day - 1
+None	<cr> <cr> <cr> <cr> 2 Gy at a rate of 0.07 to 0.20 Gy / min on day 0
+(6,12,DOSE-SITE) , (10,12,DOSE-SITE) , (12,15,DOSE-FXNO) , (12,18,DOSE-FXFREQ) , (12,22,DOSE-FXFREQ)	<cr> <cr> <cr> <cr> to the nasal cavity and surrounding sinuses , 56 Gy in 28 fractions , once per day , five days per week
+None	<cr> <cr> <cr> <cr> total dose 70 to 74 Gy
+(4,16,DOSE-FXNO)	<cr> <cr> <cr> <cr> 50.4 Gy of proton or photon ( intensity modulated ) radiation in 28 fractions
+(4,8,DOSE-FXFREQ)	<cr> <cr> <cr> <cr> 3 Gy fractions , five fractions per week
+(4,10,DOSE-SITE)	<cr> <cr> <cr> <cr> 36 Gy to areas of initial bulky disease
+(5,8,DOSE-DOSE)	<cr> <cr> <cr> <cr> to 45 Gy in 1.5 - Gy fractions
+(5,8,DOSE-DOSE)	<cr> <cr> <cr> <cr> to 30 Gy in 1.80 - Gy fractions
+(6,29,DOSE-FXNO) , (12,15,DOSE-SITE) , (18,22,DOSE-BOOST) , (18,22,DOSE-SITE)	<cr> <cr> <cr> <cr> total of 32 fractions in 6.4 weeks : 50 Gy of regional treatment and 14 Gy to the boost field , for total dose of 64 Gy
+None	<cr> <cr> <cr> <cr> to 56 Gy in 28 fractions , 5 fractions per week
+(4,7,DOSE-FXNO) , (4,10,DOSE-DOSE) , (7,10,DOSE-FXNO)	<cr> <cr> <cr> <cr> 36 Gy in 18 fractions of 2.00 Gy per fraction
+None	<cr> <cr> <cr> <cr> 55 Gy )
+(4,7,DOSE-FXNO)	<cr> <cr> <cr> <cr> 35 Gy in 20 fractions
+None	<cr> <cr> <cr> <cr> 45 Gy total
+(4,6,DOSE-FXFREQ)	<cr> <cr> <cr> <cr> 800 cGy once per day on days - 11 to - 1 ( 10 fractions
+None	<cr> <cr> <cr> <cr>

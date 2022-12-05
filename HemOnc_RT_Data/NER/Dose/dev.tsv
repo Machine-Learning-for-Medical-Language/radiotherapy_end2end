@@ -1,0 +1,54 @@
+O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O O O O O B-RT_Dosage I-RT_Dosage I-RT_Dosage I-RT_Dosage O O O O O O B-RT_Dosage I-RT_Dosage I-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O O O O O O B-RT_Dosage I-RT_Dosage I-RT_Dosage I-RT_Dosage	for a total dose of 80.8 Gy to point A is started 2 months after start of androgen deprivation therapy ( ADT ) , 1.8 to 2 Gy per fraction , with an initial 44 to 46 Gy to the pelvis , then an additional conedown to the prostate that resulted in a total dose of 65 to 70 Gy
+B-RT_Dosage I-RT_Dosage O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O O B-RT_Dosage I-RT_Dosage	1.8 Gy fractions x 25 fractions , total dose of 45 Gy to the planning target volume ( PTV-1 ) ; then a boost of 1.8 Gy fractions x 8 fractions , total boost dose of 14.4 Gy to the PTV-2 , for a total cumulative dose of 59.4 Gy
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O	1.8 Gy fractions x 25 fractions , for a total dose of 45 Gy to primary target volume .
+O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O O O O O O O O	Then 5.4 Gy boost to secondary target volume of 1 - to 1.5-cm margin on all sides , including proven nodal involvement .
+O B-RT_Dosage I-RT_Dosage O O O O	Total 50.4 Gy in 28 fractions .
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O O O O O B-RT_Dosage I-RT_Dosage O	220 cGy twice per day in 6 fractions on days - 6 to - 4 ( total dose : 1320 cGy )
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O	2 Gy fractions x 25 fractions , for a total dose of 50 Gy , to start within 4 hours after the first dose of chemotherapy .
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O	2.8 Gy fractions once per day x 15 fractions ( total dose : 42 Gy ) over 3 weeks , given between the third and fourth chemotherapy courses
+B-RT_Dosage I-RT_Dosage O O O O O O O B-RT_Dosage I-RT_Dosage O	2 Gy fractions x 30 fractions ( total of 60 Gy )
+B-RT_Dosage I-RT_Dosage O O O O O O O O B-RT_Dosage I-RT_Dosage	1.8 Gy x 32 fractions , for a dose of 57.6 Gy
+B-RT_Dosage I-RT_Dosage O O O O O O O O O B-RT_Dosage I-RT_Dosage	1.8 Gy x 28 fractions , for an initial dose of 50.4 Gy
+B-RT_Dosage I-RT_Dosage I-RT_Dosage I-RT_Dosage O O O O O B-RT_Dosage I-RT_Dosage O	1.8 to 2 Gy fractions ( total dose : 68.4 Gy )
+B-RT_Dosage I-RT_Dosage O O O O O O	2.5 Gy fractions , five fractions per week
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O B-RT_Dosage I-RT_Dosage O	200 cGy twice per day in 6 fractions on days - 6 to - 4 with lung shielding at 10 Gy ( total dose : 1200 cGy )
+B-RT_Dosage I-RT_Dosage O O O O O O O	2 Gy fractions x 35 fractions ( total dose
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O B-RT_Dosage I-RT_Dosage O O O	1.2 Gy fractions given twice per day , 5 times per week ( total dose : 80.4 Gy for oropharynx ; 75.6 Gy for hypopharynx )
+B-RT_Dosage I-RT_Dosage O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O B-RT_Dosage I-RT_Dosage	2 Gy fractions x 35 fractions ( total dose : 70 Gy ) , given 5 times per week over 7 weeks with 1.8 Gy fractions given in 30 fractions , for a total dose of 54 Gy
+B-RT_Dosage I-RT_Dosage O O O O O O O B-RT_Dosage I-RT_Dosage O	2.0 Gy x 20 fractions ( total dose : 40 Gy )
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O B-RT_Dosage I-RT_Dosage	1.8 Gy fractions x 23 fractions , for a total dose of 41.4 Gy
+B-RT_Dosage I-RT_Dosage O O O O O O O O B-RT_Dosage I-RT_Dosage O	2.75 Gy fractions x 20 fractions ( total dose : 55 Gy )
+B-RT_Dosage I-RT_Dosage O O O O O O O	1.5 Gy fractions x 12 fractions ( total dose
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O B-RT_Dosage I-RT_Dosage	2.0 Gy fractions x 20 fractions , for a total dose of 40 Gy
+O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O	at a minimum : 1.8 Gy per day x 25 fractions ( total dose : 45 Gy ) , given over 5 weeks ; see articles for additional details
+B-RT_Dosage I-RT_Dosage O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O	2 Gy fractions x 30 fractions ( total dose : 60 Gy ) , given 5 times per week
+B-RT_Dosage I-RT_Dosage O O O O O O O O B-RT_Dosage I-RT_Dosage O	1.8 Gy fractions x 22 fractions ( total dose : 39.6 Gy )
+B-RT_Dosage I-RT_Dosage	54.4 Gy
+B-RT_Dosage I-RT_Dosage	66 Gy
+B-RT_Dosage I-RT_Dosage O O O O O O O O O B-RT_Dosage I-RT_Dosage	1.80 Gy for 28 fractions , for a total dose of 50.4 Gy
+O O O O O B-RT_Dosage I-RT_Dosage I-RT_Dosage I-RT_Dosage O O O O O B-RT_Dosage I-RT_Dosage I-RT_Dosage I-RT_Dosage O O	to primary unresected tumors , 1.8 to 2 Gy fractions ( total dose : 65 to 70 Gy ) .
+O O O B-RT_Dosage I-RT_Dosage O	Post-operative areas received 60 Gy .
+O O O O O O O O O B-RT_Dosage I-RT_Dosage O	Nodal areas not involved by tumor received at least 45 Gy .
+B-RT_Dosage I-RT_Dosage O O O O O B-RT_Dosage I-RT_Dosage O O O O	36 Gy in 18 fractions , with 4 Gy boost to involved fields
+B-RT_Dosage I-RT_Dosage O B-RT_Dosage I-RT_Dosage O O O O	30 Gy + 10 Gy to the involved field
+B-RT_Dosage O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O	1.50-Gy fractions with a total dose of 10 Gy over 3 days using twice per day fractions
+B-RT_Dosage I-RT_Dosage	44.8 Gy
+O O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O	total of 54 Gy given ( dose per fraction and total duration of treatment was not specified ) with a total dose of 12 Gy over 3 days ( days - 6 to - 4 ) in fractions
+B-RT_Dosage I-RT_Dosage O	50.4 Gy total
+O O O O O O O B-RT_Dosage I-RT_Dosage	to a total dose of at least 40 Gy
+B-RT_Dosage I-RT_Dosage O O O O O	2 Gy once on day - 1
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O	2 Gy at a rate of 0.07 to 0.20 Gy / min on day 0
+O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O	to the nasal cavity and surrounding sinuses , 56 Gy in 28 fractions , once per day , five days per week
+O O B-RT_Dosage I-RT_Dosage I-RT_Dosage I-RT_Dosage	total dose 70 to 74 Gy
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O	50.4 Gy of proton or photon ( intensity modulated ) radiation in 28 fractions
+B-RT_Dosage I-RT_Dosage O O O O O O	3 Gy fractions , five fractions per week
+B-RT_Dosage I-RT_Dosage O O O O O O	36 Gy to areas of initial bulky disease
+O B-RT_Dosage I-RT_Dosage O B-RT_Dosage O	to 45 Gy in 1.5-Gy fractions
+O B-RT_Dosage I-RT_Dosage O B-RT_Dosage O	to 30 Gy in 1.80-Gy fractions
+O O O O O O O O B-RT_Dosage I-RT_Dosage O O O O B-RT_Dosage I-RT_Dosage O O O O O O O O O B-RT_Dosage I-RT_Dosage	total of 32 fractions in 6.4 weeks : 50 Gy of regional treatment and 14 Gy to the boost field , for total dose of 64 Gy
+O B-RT_Dosage I-RT_Dosage O O O O O O O O	to 56 Gy in 28 fractions , 5 fractions per week
+B-RT_Dosage I-RT_Dosage O O O O B-RT_Dosage I-RT_Dosage O O	36 Gy in 18 fractions of 2.00 Gy per fraction
+B-RT_Dosage I-RT_Dosage O	55 Gy )
+B-RT_Dosage I-RT_Dosage O O O	35 Gy in 20 fractions
+B-RT_Dosage I-RT_Dosage O	45 Gy total
+B-RT_Dosage I-RT_Dosage O O O O O O O O O O O O O	800 cGy once per day on days - 11 to - 1 ( 10 fractions
