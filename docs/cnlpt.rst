@@ -7,8 +7,7 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   cnlpt.api
-   cnlpt.data
+   cnlpt.pipelines
 
 Submodules
 ----------
@@ -20,7 +19,14 @@ Submodules
    cnlpt.CnlpModelForClassification
    cnlpt.HierarchicalTransformer
    cnlpt.cnlp_data
+   cnlpt.cnlp_pipeline
+   cnlpt.cnlp_pipeline_utils
    cnlpt.cnlp_processors
+   cnlpt.date_fsm
+   cnlpt.formatting
+   cnlpt.rt_coordination_rules
+   cnlpt.rt_model_eval
+   cnlpt.text_engineering
    cnlpt.thyme_eval
    cnlpt.train_system
 
