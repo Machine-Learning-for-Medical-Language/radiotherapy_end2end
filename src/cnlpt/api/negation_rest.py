@@ -19,7 +19,12 @@ from pydantic import BaseModel
 
 from typing import List, Tuple, Dict
 
-from .cnlp_rest import EntityDocument, ClassificationDocumentDataset, create_instance_string, initialize_cnlpt_model
+from .cnlp_rest import (
+    EntityDocument,
+    ClassificationDocumentDataset,
+    create_instance_string,
+    initialize_cnlpt_model,
+)
 from ..cnlp_processors import NegationProcessor
 from ..CnlpModelForClassification import CnlpModelForClassification, CnlpConfig
 
@@ -41,35 +46,42 @@ import torch
 
 app = FastAPI()
 model_name = "tmills/cnlpt-negation-roberta-sharpseed"
-logger = logging.getLogger('Negation_REST_Processor')
+logger = logging.getLogger("Negation_REST_Processor")
 logger.setLevel(logging.DEBUG)
 
 max_length = 128
 
+
 class NegationResults(BaseModel):
-    ''' statuses: dictionary from entity id to classification decision about negation; true -> negated, false -> not negated'''
+    """statuses: dictionary from entity id to classification decision about negation; true -> negated, false -> not negated"""
+
     statuses: List[int]
+
 
 @app.on_event("startup")
 async def startup_event():
     initialize_cnlpt_model(app, model_name)
 
+
 @app.post("/negation/process")
 async def process(doc: EntityDocument):
     doc_text = doc.doc_text
-    logger.warn('Received document of len %d to process with %d entities' % (len(doc_text), len(doc.entities)))
+    logger.warn(
+        "Received document of len %d to process with %d entities"
+        % (len(doc_text), len(doc.entities))
+    )
     instances = []
     start_time = time()
 
     for ent_ind, offsets in enumerate(doc.entities):
         # logger.debug('Entity ind: %d has offsets (%d, %d)' % (ent_ind, offsets[0], offsets[1]))
         inst_str = create_instance_string(doc_text, offsets)
-        logger.debug('Instance string is %s' % (inst_str))
+        logger.debug("Instance string is %s" % (inst_str))
         instances.append(inst_str)
 
-    dataset = ClassificationDocumentDataset.from_instance_list(instances, 
-                                                               app.state.tokenizer, 
-                                                               label_list=NegationProcessor().get_labels())
+    dataset = ClassificationDocumentDataset.from_instance_list(
+        instances, app.state.tokenizer, label_list=NegationProcessor().get_labels()
+    )
     preproc_end = time()
 
     output = app.state.trainer.predict(test_dataset=dataset)
@@ -90,26 +102,40 @@ async def process(doc: EntityDocument):
     pred_time = pred_end - preproc_end
     postproc_time = postproc_end - pred_end
 
-    logging.warn("Pre-processing time: %f, processing time: %f, post-processing time %f" % (preproc_time, pred_time, postproc_time))
-    
+    logging.warn(
+        "Pre-processing time: %f, processing time: %f, post-processing time %f"
+        % (preproc_time, pred_time, postproc_time)
+    )
+
     return output
+
 
 @app.get("/negation/{test_str}")
 async def test(test_str: str):
-    return {'argument': test_str}
+    return {"argument": test_str}
 
 
 def rest():
+    """ """
     import argparse
 
-    parser = argparse.ArgumentParser(description='Run the http server for negation')
-    parser.add_argument('-p', '--port', type=int, help='The port number to run the server on', default=8000)
+    parser = argparse.ArgumentParser(description="Run the http server for negation")
+    parser.add_argument(
+        "-p",
+        "--port",
+        type=int,
+        help="The port number to run the server on",
+        default=8000,
+    )
 
     args = parser.parse_args()
 
     import uvicorn
-    uvicorn.run("cnlpt.api.negation_rest:app", host='0.0.0.0', port=args.port, reload=True)
+
+    uvicorn.run(
+        "cnlpt.api.negation_rest:app", host="0.0.0.0", port=args.port, reload=True
+    )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     rest()
