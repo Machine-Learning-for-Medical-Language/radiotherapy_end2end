@@ -91,11 +91,12 @@ git clone https://github.com/Eli-Goldner/personal_cnlpt.git
 ```
 git clone git@github.com:Eli-Goldner/personal_cnlpt.git
 ```
-Then `cd personal_cnlpt && pip install -e .` will install the package along with all the non-PyTorch dependencies. 
+Then  
 
 ```
-pip install -e .
+cd personal_cnlpt && pip install -e .
 ```
+will install the package along with all the non-PyTorch dependencies.
 
 ## Input format
 
@@ -109,7 +110,9 @@ Tags are one of `O`, `B-<mention type>`, `I-<mention type>`, respectively, token
 
 label:
 >`O O O B-Anatomical_site O B-Anatomical_site I-Anatomical_site I-Anatomical_site O B-Anatomical_site I-Anatomical_site I-Anatomical_site I-Anatomical_site I-Anatomical_site O O O O O O B-Anatomical_site I-Anatomical_site O`
-paragraph
+
+
+cTAKES paragraph:
 >`Then 5.4 Gy boost to secondary target volume of 1 - to 1.5-cm margin on all sides , including proven nodal involvement .`
 
 in the actual files these are separated by a tab, presentation here is for readability.
@@ -120,7 +123,9 @@ Tokens which comprise the anchor dose mention are surrounded by the `<RT_DOSE-ST
 
 label:
 >`DOSE-DOSE`
-paragraph:
+
+
+cTAKES paragraph:
 >`of 30 Gy to point A given in 5 fractions , starting week 4 of XRT <RT_DOSE-START> 1.8 Gy <RT_DOSE-END> fractions x 28 fractions , for a total dose of <DOSE-START> 50.4 Gy <DOSE-END> . The last 5.4 Gy of the 50.4 Gy is limited to the tumor bed . 1.8 Gy fractions x 25 fractions , then a 5.4 Gy final boost , for a total dose of 50.4 Gy , starting within 24 hours of start of chemotherapy 180 cGy x 22 with 3 cm margin to GTV then 180 cGy x 6 with 2 cm margin to GTV , total 50.4 Gy over 6`
 
 ## Training Models
