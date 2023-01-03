@@ -106,20 +106,20 @@ will install the package along with all the non-PyTorch dependencies.
 
 Newline separated tab delimited (`tsv`) files.
 
-Tags are one of `O`, `B-<mention type>`, `I-<mention type>`, respectively, token is outside a mention, token is the beginning of a mention, token is inside of a mention
+Tags are one of `O`, `B-<mention type>`, `I-<mention type>`, respectively, the token is outside of a mention, the token is the beginning of a mention, and the token is inside of a mention.
 
 label:
 >`O O O B-Anatomical_site O B-Anatomical_site I-Anatomical_site I-Anatomical_site O B-Anatomical_site I-Anatomical_site I-Anatomical_site I-Anatomical_site I-Anatomical_site O O O O O O B-Anatomical_site I-Anatomical_site O`
 
 
-cTAKES paragraph:
+tokenized cTAKES paragraph:
 >`Then 5.4 Gy boost to secondary target volume of 1 - to 1.5-cm margin on all sides , including proven nodal involvement .`
 
 in the actual files these are separated by a tab, presentation here is for readability.
 
 ### Relation Extraction
 
-Tokens which comprise the anchor dose mention are surrounded by the `<RT_DOSE-START>` and `<RT_DOSE-END>` tags.  Tokens which comprise the attribute mention (one of boost, date, second dose, fraction number, fraction frequency, site) are surrounded by their corresponding tags, e.g. `<BOOST-START>, <BOOST-END>`, `<DATE-START>, <DATE-END>`, etc.   
+Tokens which comprise the anchor dose mention are surrounded by the `<RT_DOSE-START>` and `<RT_DOSE-END>` tags.  Tokens which comprise the attribute mention (one of boost, date, second dose, fraction number, fraction frequency, site) are surrounded by their corresponding tags, e.g. `<BOOST-START>, <BOOST-END>`, `<DATE-START>, <DATE-END>`, `<DOSE-START>, <DOSE-END>`, etc.   
 
 label:
 >`DOSE-DOSE`
@@ -133,6 +133,8 @@ cTAKES paragraph:
 Defining tasks is accomplished in `src/cnlpt/cnlp_processors.py`.
 NER tasks are cases of `tagging` tasks in the framework,
 relation extraction with provided entities are `classification` tasks.
+
+Here is the script used to train the boost NER model
 
 `boost_train.sh` =
 
@@ -226,7 +228,7 @@ However we have provided data from [HemOnc.org](HemOnc.org) for training NER and
 instructions for training models and obtaining end-to-end results with trained models,
 and own results from this process using the provided HemOnc.org data.
 
-For the instructions and our results obtained from the same process, please see the file `hemonc-results.md` at the top level of this directory.
+For the instructions and our results obtained from the same process, please see the file `HemOncInstructions.md` at the top level of this directory.
 
 ## Acknowledgements
 
