@@ -85,16 +85,16 @@ for possible strategies for inference, for training optimizations see [Huggingfa
 Download the repository via either:
 - HTTPS
 ```
-git clone https://github.com/Eli-Goldner/personal_cnlpt.git
+git clone https://github.com/Machine-Learning-for-Medical-Language/radiotherapy_end2end.git 
 ```
 - SSH
 ```
-git clone git@github.com:Eli-Goldner/personal_cnlpt.git
+git clone git@github.com:Machine-Learning-for-Medical-Language/radiotherapy_end2end.git
 ```
 Then  
 
 ```
-cd personal_cnlpt && pip install -e .
+cd radiotherapy_end2end && pip install -e .
 ```
 will install the package along with all the non-PyTorch dependencies.
 
