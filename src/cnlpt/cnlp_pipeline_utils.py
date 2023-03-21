@@ -317,17 +317,9 @@ def get_chunk_dose_indices(chunk_indices, chunk, taggers_dict, axis_task):
     if filtered_chunk is None:
         return []
     chunk_ann = dose_model(filtered_chunk)
-
-    """
-    print(f"chunk:\n{chunk}\n")
-    print(f"filtered chunk:\n{filtered_chunk}")
-    print(f"filtered indices:\n{filtered_inds}\n")
-    print(f"model annotation:\n{chunk_ann}\n")
-    """    
+    
     raw_dose_chunk_indices = process_ann(chunk_ann)
 
-    # print(f"dose indices from model:\n{raw_dose_chunk_indices}\n")
-    
     dose_chunk_indices = [
         itemgetter(*dose_inds)(filtered_inds) for dose_inds in raw_dose_chunk_indices
     ]
@@ -622,8 +614,6 @@ def get_sentences_and_labels(in_file: str, mode: str, task_names):
         # 'dev' lets us get labels without running into issues of downsampling
         lines = task_processors[0]._read_tsv(in_file)
         examples = task_processors[0]._create_examples(lines, "dev")
-        for example in examples:
-            print(example)
         
         def example2label(example):
             """
@@ -729,8 +719,6 @@ def classify_casoid_annotations(casoid, out_model_dict):
                         "score": best_score,
                         "sig_model_src": task,
                     }
-                    print(f"Raw: {w_d_inds}\t{indcs}\t{model_output}")
-                    print(f"final: {sent_dict['label_dict']}")
     return casoid
 
 
@@ -1134,7 +1122,6 @@ def get_predictions(
          paragraph, CASoid with classified annotation windows
         """
         paragraph, casoid = casoid_pair
-        print(paragraph)
         return paragraph, classify_casoid_annotations(casoid, out_model_dict)
 
     def get_casoid_label(casoid_pair):
