@@ -6,7 +6,7 @@ This code is released under the [Apache License, Version 2.0](https://www.apache
 
 ## Paper
 
-The paper for which this code was written is [here](https://www.w3.org/Provider/Style/dummy.html).
+The paper for which this code was written is [here]( https://doi.org/10.1016/j.ijrobp.2023.03.055 ).
 This README does *not* include information on the schema or guidelines used in annotating the data,
 or more than basic information about the source of the data.
 For technical questions not pertaining to this code, please see the paper.
